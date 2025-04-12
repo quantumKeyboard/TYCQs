@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 import Index from "./pages/Index";
 import ChaptersPage from "./pages/ChaptersPage";
 import QuizPage from "./pages/QuizPage";
+import LoginPage from "./pages/LoginPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
             <div className="flex-1">
               <Routes>
                 <Route path="/" element={<Index />} />
+                <Route path="/login" element={<LoginPage />} />
                 <Route path="/chapters/:subject" element={<ChaptersPage />} />
                 <Route path="/quiz/:chapterId" element={<QuizPage />} />
                 <Route path="*" element={<NotFound />} />

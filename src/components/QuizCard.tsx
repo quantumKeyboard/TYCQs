@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
-import { AlertCircle, ChevronLeft, ChevronRight, Download, Save } from "lucide-react";
+import { AlertCircle, BookmarkPlus, CheckCircle2, ChevronLeft, ChevronRight, Download, HelpCircle, Save, XCircle } from "lucide-react";
 import { Question } from "@/types";
 import { useAppContext } from "@/contexts/AppContext";
 import { useToast } from "@/hooks/use-toast";
@@ -95,7 +95,7 @@ const QuizCard: React.FC<QuizCardProps> = ({
   
   // Determine which option is correct for highlighting after submission
   const getOptionClass = (optionId: string) => {
-    if (!showAnswer) return "";
+    if (!showAnswer) return "border-mcq-medium dark:border-mcq-dark hover:border-mcq-darker dark:hover:border-mcq-medium transition-colors";
     
     const isCorrect = question.options.find(
       (opt) => opt.id === optionId
@@ -103,21 +103,48 @@ const QuizCard: React.FC<QuizCardProps> = ({
     
     if (selectedOptionId === optionId) {
       return isCorrect 
-        ? "bg-green-100 border-green-500 dark:bg-green-900/20 dark:border-green-500" 
-        : "bg-red-100 border-red-500 dark:bg-red-900/20 dark:border-red-500";
+        ? "answer-correct" 
+        : "answer-incorrect";
     }
     
     if (isCorrect) {
-      return "bg-green-100 border-green-500 dark:bg-green-900/20 dark:border-green-500";
+      return "answer-correct";
     }
     
-    return "";
+    return "opacity-70";
+  };
+
+  // Get icon for option feedback
+  const getOptionIcon = (optionId: string) => {
+    if (!showAnswer) return null;
+    
+    const isCorrect = question.options.find(
+      (opt) => opt.id === optionId
+    )?.isCorrect;
+    
+    if (isCorrect) {
+      return <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400" />;
+    }
+    
+    if (selectedOptionId === optionId && !isCorrect) {
+      return <XCircle className="h-5 w-5 text-red-600 dark:text-red-400" />;
+    }
+    
+    return null;
   };
   
   return (
-    <Card className="w-full max-w-3xl mx-auto card-shadow border-2 border-mcq-lightest animate-fade-in">
-      <CardHeader className="mcq-gradient text-white rounded-t-md pb-4">
-        <CardTitle className="text-xl">{question.text}</CardTitle>
+    <Card className="w-full max-w-3xl mx-auto flashcard-container border-mcq-lighter animate-fade-in">
+      <CardHeader className="flashcard-gradient text-white pb-6 relative">
+        <div className="absolute top-2 right-2 bg-white/20 rounded-full p-1 text-xs font-medium">
+          {question.chapterId.split("-")[0].toUpperCase()}
+        </div>
+        <CardTitle className="text-xl">
+          <div className="flex items-start">
+            <HelpCircle className="h-5 w-5 mr-2 mt-1 flex-shrink-0 text-mcq-lighter" />
+            <span>{question.text}</span>
+          </div>
+        </CardTitle>
       </CardHeader>
       <CardContent className="pt-6">
         <RadioGroup
@@ -129,40 +156,43 @@ const QuizCard: React.FC<QuizCardProps> = ({
           {question.options.map((option) => (
             <div
               key={option.id}
-              className={`flex items-center space-x-2 p-3 rounded-md border transition-colors ${getOptionClass(option.id)}`}
+              className={`flex items-center space-x-2 p-4 rounded-md border transition-all duration-300 ${getOptionClass(option.id)}`}
             >
               <RadioGroupItem 
                 value={option.id} 
                 id={option.id} 
                 disabled={showAnswer}
+                className="border-mcq-darker text-mcq-darkest"
               />
               <Label
                 htmlFor={option.id}
-                className="flex-1 cursor-pointer"
+                className="flex-1 cursor-pointer flex items-center justify-between"
               >
-                {option.text}
+                <span>{option.text}</span>
+                {getOptionIcon(option.id)}
               </Label>
             </div>
           ))}
         </RadioGroup>
         
         {showAnswer && question.explanation && (
-          <div className="mt-6 p-4 bg-mcq-palest rounded-md border border-mcq-lighter animate-fade-in">
-            <div className="flex items-start mb-2">
-              <AlertCircle className="h-5 w-5 text-mcq-medium mr-2 mt-0.5" />
-              <h3 className="font-semibold text-mcq-darkest">Explanation</h3>
+          <div className="mt-6 p-5 bg-mcq-lighter/30 dark:bg-mcq-darker/20 rounded-md border border-mcq-light dark:border-mcq-dark animate-fade-in">
+            <div className="flex items-start mb-3">
+              <AlertCircle className="h-5 w-5 text-mcq-darkest dark:text-mcq-light mr-2 mt-0.5" />
+              <h3 className="font-semibold text-mcq-darkest dark:text-mcq-light">Explanation</h3>
             </div>
-            <p className="text-sm">{question.explanation}</p>
+            <p className="text-sm text-mcq-darkest dark:text-white/90">{question.explanation}</p>
           </div>
         )}
       </CardContent>
-      <CardFooter className="flex flex-wrap justify-between gap-2">
+      <CardFooter className="flex flex-wrap justify-between gap-3 border-t border-mcq-lighter dark:border-mcq-darker pt-4">
         <div className="flex gap-2">
           <Button
             variant="outline"
             onClick={onPreviousQuestion}
             disabled={!hasPrevious}
             size="sm"
+            className="bg-white dark:bg-mcq-darkest border-mcq-medium dark:border-mcq-dark"
           >
             <ChevronLeft className="h-4 w-4 mr-1" />
             Previous
@@ -173,7 +203,7 @@ const QuizCard: React.FC<QuizCardProps> = ({
               onClick={handleNext}
               disabled={!hasNext}
               size="sm"
-              className="bg-mcq-medium hover:bg-mcq-darker"
+              className="bg-mcq-medium hover:bg-mcq-dark text-white"
             >
               Next
               <ChevronRight className="h-4 w-4 ml-1" />
@@ -182,7 +212,7 @@ const QuizCard: React.FC<QuizCardProps> = ({
             <Button
               onClick={handleSubmit}
               size="sm"
-              className="bg-mcq-medium hover:bg-mcq-darker"
+              className="bg-mcq-medium hover:bg-mcq-dark text-white"
             >
               Submit
             </Button>
@@ -195,16 +225,18 @@ const QuizCard: React.FC<QuizCardProps> = ({
             size="icon"
             onClick={handleSaveForLater}
             title="Save for later"
+            className="border-mcq-medium dark:border-mcq-dark"
           >
-            <Save className="h-4 w-4" />
+            <BookmarkPlus className="h-4 w-4 text-mcq-darkest dark:text-mcq-light" />
           </Button>
           <Button
             variant="outline"
             size="icon"
             onClick={handleExportAsImage}
             title="Export as image"
+            className="border-mcq-medium dark:border-mcq-dark"
           >
-            <Download className="h-4 w-4" />
+            <Download className="h-4 w-4 text-mcq-darkest dark:text-mcq-light" />
           </Button>
         </div>
       </CardFooter>

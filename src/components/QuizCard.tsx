@@ -1,5 +1,4 @@
-
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
@@ -8,26 +7,44 @@ import { AlertCircle, BookmarkPlus, CheckCircle2, ChevronLeft, ChevronRight, Dow
 import { Question } from "@/types";
 import { useAppContext } from "@/contexts/AppContext";
 import { useToast } from "@/hooks/use-toast";
+import { exportAsImage } from "@/lib/utils/export";
 
 interface QuizCardProps {
   question: Question;
   onNextQuestion: () => void;
   onPreviousQuestion: () => void;
+  onAnswerSubmit?: (isCorrect: boolean, selectedOptionId: string) => void;
   hasNext: boolean;
   hasPrevious: boolean;
+  savedAnswer?: string;
 }
 
 const QuizCard: React.FC<QuizCardProps> = ({
   question,
   onNextQuestion,
   onPreviousQuestion,
+  onAnswerSubmit,
   hasNext,
   hasPrevious,
+  savedAnswer
 }) => {
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
   const [showAnswer, setShowAnswer] = useState(false);
-  const { addProgress, currentAttempt, setCurrentAttempt } = useAppContext();
+  const { currentAttempt, setCurrentAttempt } = useAppContext();
   const { toast } = useToast();
+  const cardRef = useRef<HTMLDivElement>(null);
+  
+  // Restore saved answer when question changes
+  useEffect(() => {
+    if (savedAnswer) {
+      setSelectedOptionId(savedAnswer);
+      // If there's a saved answer, we should show the answer explanation
+      setShowAnswer(true);
+    } else {
+      setSelectedOptionId(null);
+      setShowAnswer(false);
+    }
+  }, [question.id, savedAnswer]);
   
   const handleSubmit = () => {
     if (!selectedOptionId) {
@@ -43,20 +60,17 @@ const QuizCard: React.FC<QuizCardProps> = ({
       (opt) => opt.id === selectedOptionId
     )?.isCorrect || false;
     
-    // Record the progress
-    addProgress({
-      questionId: question.id,
-      selectedOption: selectedOptionId,
-      isCorrect,
-      timestamp: Date.now(),
-    });
-    
     // Update current attempt
     setCurrentAttempt({
       questionId: question.id,
       selectedOptionId,
       isCorrect,
     });
+    
+    // Call the onAnswerSubmit callback if provided
+    if (onAnswerSubmit) {
+      onAnswerSubmit(isCorrect, selectedOptionId);
+    }
     
     // Show the answer explanation
     setShowAnswer(true);
@@ -69,6 +83,28 @@ const QuizCard: React.FC<QuizCardProps> = ({
       variant: isCorrect ? "default" : "destructive",
     });
   };
+
+  const handleExport = async () => {
+    if (!cardRef.current) return;
+
+    try {
+      await exportAsImage(
+        cardRef.current,
+        `question-${question.id}-${new Date().getTime()}`
+      );
+      toast({
+        title: "Success",
+        description: "Question card exported as image",
+      });
+    } catch (error) {
+      console.error("Error exporting question:", error);
+      toast({
+        title: "Error",
+        description: "Failed to export question card",
+        variant: "destructive",
+      });
+    }
+  };
   
   const handleNext = () => {
     setSelectedOptionId(null);
@@ -78,19 +114,37 @@ const QuizCard: React.FC<QuizCardProps> = ({
   };
   
   const handleSaveForLater = () => {
-    // In a real app, this would save to a user's saved questions list
-    toast({
-      title: "Question Saved",
-      description: "This question has been saved for later review.",
-    });
-  };
-  
-  const handleExportAsImage = () => {
-    // In a real app, this would create and download an image of the card
-    toast({
-      title: "Export Feature",
-      description: "This would export the question as an image in a real app.",
-    });
+    try {
+      // Get existing saved questions from localStorage
+      const savedQuestions = JSON.parse(localStorage.getItem('savedQuestions') || '[]');
+      
+      // Check if question is already saved
+      if (savedQuestions.some((q: Question) => q.id === question.id)) {
+        toast({
+          title: "Already Saved",
+          description: "This question is already in your saved list.",
+          variant: "default",
+        });
+        return;
+      }
+      
+      // Add new question to saved list
+      savedQuestions.push(question);
+      localStorage.setItem('savedQuestions', JSON.stringify(savedQuestions));
+      
+      toast({
+        title: "Question Saved",
+        description: "This question has been saved for later review.",
+        variant: "default",
+      });
+    } catch (error) {
+      console.error("Error saving question for later:", error);
+      toast({
+        title: "Error",
+        description: "Failed to save the question. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
   
   // Determine which option is correct for highlighting after submission
@@ -134,10 +188,12 @@ const QuizCard: React.FC<QuizCardProps> = ({
   };
   
   return (
-    <Card className="w-full max-w-3xl mx-auto flashcard-container border-mcq-lighter animate-fade-in">
+    <Card ref={cardRef} className="w-full max-w-3xl mx-auto flashcard-container border-mcq-lighter animate-fade-in">
       <CardHeader className="flashcard-gradient text-white pb-6 relative">
-        <div className="absolute top-2 right-2 bg-white/20 rounded-full p-1 text-xs font-medium">
-          {question.chapterId.split("-")[0].toUpperCase()}
+        <div className="flex justify-between items-start">
+          <div className="absolute top-2 right-2 bg-white/20 rounded-full p-1 text-xs font-medium">
+            {question.chapterId ? question.chapterId.split("-")[0].toUpperCase() : "Q"}
+          </div>
         </div>
         <CardTitle className="text-xl">
           <div className="flex items-start">
@@ -198,23 +254,37 @@ const QuizCard: React.FC<QuizCardProps> = ({
             Previous
           </Button>
           
-          {showAnswer ? (
-            <Button
-              onClick={handleNext}
-              disabled={!hasNext}
-              size="sm"
-              className="bg-mcq-medium hover:bg-mcq-dark text-white"
-            >
-              Next
-              <ChevronRight className="h-4 w-4 ml-1" />
-            </Button>
-          ) : (
+          <Button
+            variant="outline"
+            onClick={handleNext}
+            disabled={!showAnswer && hasNext}
+            size="sm"
+            className="bg-white dark:bg-mcq-darkest border-mcq-medium dark:border-mcq-dark"
+          >
+            Next
+            <ChevronRight className="h-4 w-4 ml-1" />
+          </Button>
+        </div>
+        
+        <div className="flex gap-2">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={handleExport}
+            className="bg-white dark:bg-mcq-darkest border-mcq-medium dark:border-mcq-dark"
+          >
+            <Download className="h-4 w-4 mr-1" />
+            Export
+          </Button>
+          
+          {!showAnswer && (
             <Button
               onClick={handleSubmit}
+              disabled={!selectedOptionId}
               size="sm"
-              className="bg-mcq-medium hover:bg-mcq-dark text-white"
+              className="flashcard-gradient hover:opacity-90 transition-opacity"
             >
-              Submit
+              Submit Answer
             </Button>
           )}
         </div>
@@ -228,15 +298,6 @@ const QuizCard: React.FC<QuizCardProps> = ({
             className="border-mcq-medium dark:border-mcq-dark"
           >
             <BookmarkPlus className="h-4 w-4 text-mcq-darkest dark:text-mcq-light" />
-          </Button>
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={handleExportAsImage}
-            title="Export as image"
-            className="border-mcq-medium dark:border-mcq-dark"
-          >
-            <Download className="h-4 w-4 text-mcq-darkest dark:text-mcq-light" />
           </Button>
         </div>
       </CardFooter>

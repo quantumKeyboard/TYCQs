@@ -1,26 +1,42 @@
-
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, BookText, BookType, GraduationCap, LogIn } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
+import { useAuth } from "@/contexts/AuthContext";
 
 const LoginPage: React.FC = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { toast } = useToast();
+  const { user, signIn } = useAuth();
   
-  const handleLoginWithGoogle = () => {
-    // In a real implementation, this would connect to Google OAuth
-    toast({
-      title: "Login Simulation",
-      description: "In a real app, this would connect to Google OAuth",
-    });
-    
-    // For now, just redirect to the main page
-    setTimeout(() => {
-      navigate('/');
-    }, 1500);
+  // Get the redirect path from location state
+  const from = (location.state as { from?: { pathname: string } })?.from?.pathname || '/dashboard';
+  
+  // Redirect if already logged in
+  useEffect(() => {
+    if (user) {
+      navigate(from, { replace: true });
+    }
+  }, [user, navigate, from]);
+  
+  const handleLoginWithGoogle = async () => {
+    try {
+      await signIn();
+      toast({
+        title: "Success",
+        description: "Successfully signed in with Google",
+      });
+      navigate(from, { replace: true });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to sign in with Google",
+        variant: "destructive",
+      });
+    }
   };
   
   return (
@@ -29,7 +45,7 @@ const LoginPage: React.FC = () => {
         <div className="text-center">
           <GraduationCap className="mx-auto h-16 w-16 text-mcq-darkest dark:text-mcq-light animate-pulse" />
           <h1 className="mt-6 text-4xl font-extrabold text-mcq-darkest dark:text-white">
-            MCQ Quiz
+            TYCQ's
           </h1>
           <p className="mt-2 text-mcq-dark dark:text-mcq-light">
             Test your knowledge with interactive quizzes
@@ -75,7 +91,7 @@ const LoginPage: React.FC = () => {
         </Card>
         
         <div className="text-center text-sm text-muted-foreground">
-          <p>© 2025 MCQ Quiz. All rights reserved.</p>
+          <p>© 2025 TYCQ's. All rights reserved.</p>
         </div>
       </div>
     </div>

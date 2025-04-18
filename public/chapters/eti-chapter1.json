@@ -1,0 +1,2864 @@
+{
+  "chapterId": "eti-chapter1",
+  "title": "Introduction of AI",
+  "description": "This chapter introduces the fundamental concepts of Artificial Intelligence, including its definition, scope, components, types, and applications, as well as an overview of machine learning and deep learning.",
+  "questions": [
+    {
+      "id": "eti-ch1-q1",
+      "text": "Which of the following best defines Artificial Intelligence according to John McCarthy?",
+      "options": [
+        {
+          "id": "eti-ch1-q1-opt1",
+          "text": "The ability of a computer program to learn and think.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q1-opt2",
+          "text": "A branch of Computer Science focused on making machines as intelligent as humans.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q1-opt3",
+          "text": "The study of how to make computers do things which at the moment, people do better.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q1-opt4",
+          "text": "A collection of hard problems solvable by humans but without good algorithms for solving.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "John McCarthy, considered the father of AI, described it as \"The science and engineering of making intelligent machines, especially intelligent computer programs\".",
+      "tags": [
+        "definition",
+        "history",
+        "John McCarthy"
+      ]
+    },
+    {
+      "id": "eti-ch1-q2",
+      "text": "Which of the following is NOT explicitly mentioned as a scope of AI in the provided text?",
+      "options": [
+        {
+          "id": "eti-ch1-q2-opt1",
+          "text": "Robotics",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q2-opt2",
+          "text": "Computer Vision",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q2-opt3",
+          "text": "Quantum Computing",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q2-opt4",
+          "text": "Game Playing",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text mentions the scope of AI in developing machines in robotics, computer vision, language detection, game playing, expert systems, and speech recognition. Quantum computing is not listed in this section.",
+      "tags": [
+        "scope",
+        "applications",
+        "limitations"
+      ]
+    },
+    {
+      "id": "eti-ch1-q3",
+      "text": "According to the text, what is the primary limitation of the type of AI commonly found in smartphones and customer service chatbots?",
+      "options": [
+        {
+          "id": "eti-ch1-q3-opt1",
+          "text": "They require too much computational power.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q3-opt2",
+          "text": "They are limited to what they have been programmed to do.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q3-opt3",
+          "text": "They cannot process large amounts of data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q3-opt4",
+          "text": "They lack the ability to interact with humans effectively.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states that the software in smartphones and chatbots \"actually is limited to what it has been programmed to do\".",
+      "tags": [
+        "narrow AI",
+        "weak AI",
+        "limitations",
+        "applications"
+      ]
+    },
+    {
+      "id": "eti-ch1-q4",
+      "text": "In deep learning, what is the ultimate goal regarding the knowledge acquired by the software?",
+      "options": [
+        {
+          "id": "eti-ch1-q4-opt1",
+          "text": "To strictly adhere to the initial training data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q4-opt2",
+          "text": "To require constant human guidance for new tasks.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q4-opt3",
+          "text": "To use what it has learned in one area to solve problems in other areas.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q4-opt4",
+          "text": "To primarily focus on recognizing complex patterns within a specific dataset.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text explains that \"in deep learning, the goal is for the software to use what it has learned in one area to solve problems in other areas\".",
+      "tags": [
+        "deep learning",
+        "machine learning",
+        "neural networks",
+        "transfer learning"
+      ]
+    },
+    {
+      "id": "eti-ch1-q5",
+      "text": "What is the primary function of neural networks as described in the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q5-opt1",
+          "text": "To execute pre-programmed tasks with high efficiency.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q5-opt2",
+          "text": "To simulate human-like reasoning through logical deduction.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q5-opt3",
+          "text": "To specialise in clustering information and recognising complex patterns.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q5-opt4",
+          "text": "To develop formal models of knowledge representation.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states that neural networks \"specialize in clustering information and recognizing complex patterns, giving computers the ability to use more sophisticated processes to analyze data\".",
+      "tags": [
+        "neural networks",
+        "deep learning",
+        "pattern recognition",
+        "data analysis"
+      ]
+    },
+    {
+      "id": "eti-ch1-q6",
+      "text": "Which of the following is characteristic of the \"Think Well\" approach to AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q6-opt1",
+          "text": "Generating an output that gets the job done, regardless of correctness.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q6-opt2",
+          "text": "Focusing solely on the similarity of results to human actions.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q6-opt3",
+          "text": "Developing formal models of knowledge representation and reasoning rendered in algorithms.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q6-opt4",
+          "text": "Prioritising the simulation of human reasoning processes.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The \"Think Well\" approach involves developing \"formal models of knowledge representation, reasoning, learning, memory, problem solving that can be rendered in algorithms\".",
+      "tags": [
+        "AI approaches",
+        "think well",
+        "reasoning",
+        "algorithms"
+      ]
+    },
+    {
+      "id": "eti-ch1-q7",
+      "text": "What is the defining characteristic of a heuristic in the context of AI approaches?",
+      "options": [
+        {
+          "id": "eti-ch1-q7-opt1",
+          "text": "It guarantees finding an optimal solution to a problem.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q7-opt2",
+          "text": "It is a formal model of knowledge representation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q7-opt3",
+          "text": "It drastically limits the search for solutions in large problem spaces.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q7-opt4",
+          "text": "It always provides a correct solution to a given problem.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "A heuristic is described as \"a rule of thumb, strategy, trick, simplification, or any other kind of device which drastically limits search for solutions in large problem spaces\".",
+      "tags": [
+        "heuristics",
+        "AI approaches",
+        "problem solving",
+        "search"
+      ]
+    },
+    {
+      "id": "eti-ch1-q8",
+      "text": "The \"Think like humans\" approach to AI is closely associated with which field?",
+      "options": [
+        {
+          "id": "eti-ch1-q8-opt1",
+          "text": "Logic",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q8-opt2",
+          "text": "Mathematics",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q8-opt3",
+          "text": "Cognitive Science",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q8-opt4",
+          "text": "Engineering",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text explicitly states that \"Think like humans\" is the \"Cognitive science approach\".",
+      "tags": [
+        "AI approaches",
+        "think like humans",
+        "cognitive science",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "eti-ch1-q9",
+      "text": "What was a key characteristic of the ELIZA program, an example of the \"Act like humans\" approach?",
+      "options": [
+        {
+          "id": "eti-ch1-q9-opt1",
+          "text": "It used complex algorithms to understand the underlying meaning of patient statements.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q9-opt2",
+          "text": "It aimed to replicate the detailed reasoning steps of a psychotherapist.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q9-opt3",
+          "text": "It simulated a psychotherapist by using simple syntactic patterns and associated replies.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q9-opt4",
+          "text": "It was based on a deep understanding of human emotions and beliefs.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "ELIZA \"was a simple collection of syntactic patterns not unlike regular expressions\" with associated replies.",
+      "tags": [
+        "AI approaches",
+        "act like humans",
+        "behaviorist approach",
+        "ELIZA"
+      ]
+    },
+    {
+      "id": "eti-ch1-q10",
+      "text": "According to the text, from which core concepts are the fundamental components of AI derived?",
+      "options": [
+        {
+          "id": "eti-ch1-q10-opt1",
+          "text": "Mathematics, statistics, and programming.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q10-opt2",
+          "text": "Data, information, and knowledge.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q10-opt3",
+          "text": "Logic, cognition, and computation.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q10-opt4",
+          "text": "Perception, learning, and memory.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The core components and constituents of AI are derived from \"the concept of logic, cognition and computation\".",
+      "tags": [
+        "components of AI",
+        "core concepts",
+        "logic",
+        "cognition",
+        "computation"
+      ]
+    },
+    {
+      "id": "eti-ch1-q11",
+      "text": "Which of the following is listed as a \"compound component\" of AI, built upon the core components?",
+      "options": [
+        {
+          "id": "eti-ch1-q11-opt1",
+          "text": "Propositional Logic",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q11-opt2",
+          "text": "Tautology",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q11-opt3",
+          "text": "Knowledge",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q11-opt4",
+          "text": "Induction",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text identifies \"knowledge, reasoning, search, natural language processing, vision etc.\" as compound components.",
+      "tags": [
+        "components of AI",
+        "compound components",
+        "knowledge",
+        "reasoning"
+      ]
+    },
+    {
+      "id": "eti-ch1-q12",
+      "text": "According to the text, which of the core entities of AI are considered \"physical entities\"?",
+      "options": [
+        {
+          "id": "eti-ch1-q12-opt1",
+          "text": "Learning and adaptation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q12-opt2",
+          "text": "Belief and desire.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q12-opt3",
+          "text": "Memory and perception.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q12-opt4",
+          "text": "Propositional logic and predicate calculus.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states that the cognitive science concepts of \"memory and perception\" are physical entities.",
+      "tags": [
+        "components of AI",
+        "core concepts",
+        "physical entities",
+        "memory",
+        "perception"
+      ]
+    },
+    {
+      "id": "eti-ch1-q13",
+      "text": "Which of the following is categorised as a \"coarse component\" of AI in the provided text?",
+      "options": [
+        {
+          "id": "eti-ch1-q13-opt1",
+          "text": "Temporal Logic",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q13-opt2",
+          "text": "Adaptation",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q13-opt3",
+          "text": "Heuristic Search",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q13-opt4",
+          "text": "Perception",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text lists \"knowledge-based systems (KBS), heuristic search, automatic theorem proving, multi-agent systems, Al languages such as PROLOG and LISP, Natural language processing (NLP), Speech processing and vision\" as coarse components.",
+      "tags": [
+        "components of AI",
+        "coarse components",
+        "heuristic search",
+        "knowledge-based systems"
+      ]
+    },
+    {
+      "id": "eti-ch1-q14",
+      "text": "In the three-dimensional model of AI described in the text, which elements form the foundation on the x-y plane?",
+      "options": [
+        {
+          "id": "eti-ch1-q14-opt1",
+          "text": "Language, vision, and perception.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q14-opt2",
+          "text": "Knowledge, reasoning, and interface in the x-direction; logic, cognition, and computation in the y-direction.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q14-opt3",
+          "text": "Logic, cognition, and computation in the x-direction; knowledge, reasoning, and interface in the y-direction.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q14-opt4",
+          "text": "Information systems and automation.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states that \"logic, cognition and computation\" are in the x-direction and \"knowledge, reasoning and interface\" are in the y-direction, forming the foundation of AI.",
+      "tags": [
+        "AI dimensions",
+        "three-dimensional model",
+        "logic",
+        "cognition",
+        "computation",
+        "knowledge",
+        "reasoning",
+        "interface"
+      ]
+    },
+    {
+      "id": "eti-ch1-q15",
+      "text": "According to the text, which historical figures demonstrated the power of computation logic?",
+      "options": [
+        {
+          "id": "eti-ch1-q15-opt1",
+          "text": "Aristotle and Descartes.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q15-opt2",
+          "text": "Turing and Russell.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q15-opt3",
+          "text": "Charles Babbage and Boole.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q15-opt4",
+          "text": "Minsky and Chomsky.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text mentions that \"It were Charles Babbage and Boole who demonstrated the power of computation logic\".",
+      "tags": [
+        "history of AI",
+        "computation",
+        "logic",
+        "Charles Babbage",
+        "Boole"
+      ]
+    },
+    {
+      "id": "eti-ch1-q16",
+      "text": "The text draws a parallel between the human information processing paradigm (IPP) and computers. Which of the following human components is likened to the computer's memory?",
+      "options": [
+        {
+          "id": "eti-ch1-q16-opt1",
+          "text": "Sensing organs",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q16-opt2",
+          "text": "Mechanical movement organs",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q16-opt3",
+          "text": "Central nervous system (CNS) in the brain",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q16-opt4",
+          "text": "Short-term and long-term memory",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "The text states that \"short-term and long-term memory were not distinguished by computer scientists but, as a whole, it was in conjunction, termed memory\".",
+      "tags": [
+        "cognition",
+        "information processing",
+        "human brain",
+        "computer memory"
+      ]
+    },
+    {
+      "id": "eti-ch1-q17",
+      "text": "Who is credited with developing the theory of computation, specifically finite state automation, which was a turning point in mathematical models for logical computation?",
+      "options": [
+        {
+          "id": "eti-ch1-q17-opt1",
+          "text": "Chomsky",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q17-opt2",
+          "text": "Russell",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q17-opt3",
+          "text": "Turing",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q17-opt4",
+          "text": "Boole",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text explicitly mentions that \"The theory of computation developed by Turing—finite state automation—was a turning point\".",
+      "tags": [
+        "computation",
+        "Turing",
+        "finite state automation",
+        "history of computing"
+      ]
+    },
+    {
+      "id": "eti-ch1-q18",
+      "text": "In the context of the second dimension of AI (knowledge, reasoning, interface), what does \"interface\" primarily connote according to the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q18-opt1",
+          "text": "The user's graphical user interface.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q18-opt2",
+          "text": "A means of communication between one domain to another.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q18-opt3",
+          "text": "The hardware connection between machines.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q18-opt4",
+          "text": "A program that allows user interaction.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text explains that in this context, \"interface is a means of communication between one domain to another\".",
+      "tags": [
+        "AI dimensions",
+        "interface",
+        "knowledge-based systems",
+        "communication"
+      ]
+    },
+    {
+      "id": "eti-ch1-q19",
+      "text": "According to the text, how is Natural Language Processing (NLP) formed within the three-dimensional model of AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q19-opt1",
+          "text": "Primarily based on computational models of vision and perception.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q19-opt2",
+          "text": "Through the correlation of knowledge and reasoning in the y-direction.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q19-opt3",
+          "text": "On the basis of linguistic computation theory (x-direction) and concepts of interface and knowledge (y-direction).",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q19-opt4",
+          "text": "As a direct application of logical formalism and theorem proving.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states that \"NLP, for example, is formed on the basis of the linguistic computation theory of Chomsky and concepts of interface and knowledge on y-direction\".",
+      "tags": [
+        "AI dimensions",
+        "NLP",
+        "linguistic computation",
+        "interface",
+        "knowledge"
+      ]
+    },
+    {
+      "id": "eti-ch1-q20",
+      "text": "What accelerated the implementation of logical formalism in AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q20-opt1",
+          "text": "Advancements in cognitive science and psychology.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q20-opt2",
+          "text": "The development of new AI programming languages like LISP and PROLOG.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q20-opt3",
+          "text": "The rapid growth in electronic technology, especially multiprocessing parallelism.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q20-opt4",
+          "text": "Theoretical breakthroughs in machine learning algorithms.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text mentions that \"The implementation of the logical formalism was accelerated by the rapid growth in electronic technology, in general and multiprocessing parallelism in particular\".",
+      "tags": [
+        "history of AI",
+        "logical formalism",
+        "electronic technology",
+        "multiprocessing"
+      ]
+    },
+    {
+      "id": "eti-ch1-q21",
+      "text": "Which of the following is a characteristic of Narrow AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q21-opt1",
+          "text": "The ability to perform any intellectual task with human-like efficiency.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q21-opt2",
+          "text": "Possessing consciousness, sentiments, and self-awareness.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q21-opt3",
+          "text": "Being able to perform a dedicated task with intelligence within its limitations.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q21-opt4",
+          "text": "The capability to surpass human intelligence in all cognitive properties.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Narrow AI is defined as \"a type of AI which is able to perform a dedicated task with intelligence\" and cannot perform beyond its field.",
+      "tags": [
+        "types of AI",
+        "narrow AI",
+        "weak AI",
+        "characteristics"
+      ]
+    },
+    {
+      "id": "eti-ch1-q22",
+      "text": "Apple's Siri is given as an example of which type of AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q22-opt1",
+          "text": "General AI",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q22-opt2",
+          "text": "Super AI",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q22-opt3",
+          "text": "Narrow AI",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q22-opt4",
+          "text": "Reactive Machines",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text explicitly states, \"Apple Siri is a good example of Narrow AI\".",
+      "tags": [
+        "types of AI",
+        "narrow AI",
+        "examples",
+        "Siri"
+      ]
+    },
+    {
+      "id": "eti-ch1-q23",
+      "text": "What is the primary goal of General AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q23-opt1",
+          "text": "To develop systems that can react to current scenarios optimally.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q23-opt2",
+          "text": "To create machines that can surpass human intelligence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q23-opt3",
+          "text": "To make a system that could perform any intellectual task with efficiency like a human.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q23-opt4",
+          "text": "To build systems with limited memory capable of storing past experiences for a short time.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "General AI is defined as \"a type of intelligence which could perform any intellectual task with efficiency like a human\".",
+      "tags": [
+        "types of AI",
+        "general AI",
+        "strong AI",
+        "goals"
+      ]
+    },
+    {
+      "id": "eti-ch1-q24",
+      "text": "Which of the following is described as a hypothetical level of Intelligence of Systems at which machines could surpass human intelligence?",
+      "options": [
+        {
+          "id": "eti-ch1-q24-opt1",
+          "text": "General AI",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q24-opt2",
+          "text": "Limited Memory AI",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q24-opt3",
+          "text": "Super AI",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q24-opt4",
+          "text": "Theory of Mind AI",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Super AI is described as \"a level of Intelligence of Systems at which machines could surpass human intelligence\".",
+      "tags": [
+        "types of AI",
+        "super AI",
+        "future of AI",
+        "hypothetical concepts"
+      ]
+    },
+    {
+      "id": "eti-ch1-q25",
+      "text": "What is the defining characteristic of Reactive Machines?",
+      "options": [
+        {
+          "id": "eti-ch1-q25-opt1",
+          "text": "They can store past experiences for future actions.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q25-opt2",
+          "text": "They understand and react to human emotions.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q25-opt3",
+          "text": "They only focus on current scenarios and react based on the present situation.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q25-opt4",
+          "text": "They possess self-awareness and consciousness.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Reactive machines \"do not store memories or past experiences for future actions\" and \"only focus on current scenarios and react on it\".",
+      "tags": [
+        "types of AI",
+        "reactive machines",
+        "characteristics",
+        "limitations"
+      ]
+    },
+    {
+      "id": "eti-ch1-q26",
+      "text": "Self-driving cars are given as an example of which type of AI based on functionality?",
+      "options": [
+        {
+          "id": "eti-ch1-q26-opt1",
+          "text": "Reactive Machines",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q26-opt2",
+          "text": "Limited Memory",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q26-opt3",
+          "text": "Theory of Mind",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q26-opt4",
+          "text": "Self-Awareness",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states, \"Self-driving cars are one of the best examples of Limited Memory systems\" as they store recent information for navigation.",
+      "tags": [
+        "types of AI",
+        "limited memory",
+        "examples",
+        "self-driving cars"
+      ]
+    },
+    {
+      "id": "eti-ch1-q27",
+      "text": "What is the primary capability that defines \"Theory of Mind\" AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q27-opt1",
+          "text": "The ability to perform intellectual tasks as efficiently as humans.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q27-opt2",
+          "text": "The capacity to surpass human intelligence and perform any task better.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q27-opt3",
+          "text": "The understanding of human emotions, beliefs, and the ability to interact socially like humans.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q27-opt4",
+          "text": "The possession of self-consciousness, sentiments, and self-awareness.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Theory of Mind AI \"should understand the human emotions, people, beliefs, and be able to interact socially like humans\".",
+      "tags": [
+        "types of AI",
+        "theory of mind",
+        "human interaction",
+        "social intelligence"
+      ]
+    },
+    {
+      "id": "eti-ch1-q28",
+      "text": "Which type of AI, based on functionality, is described as the future of Artificial Intelligence and will possess its own consciousness?",
+      "options": [
+        {
+          "id": "eti-ch1-q28-opt1",
+          "text": "Limited Memory",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q28-opt2",
+          "text": "Theory of Mind",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q28-opt3",
+          "text": "Reactive Machines",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q28-opt4",
+          "text": "Self-Awareness",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Self-awareness AI is described as \"the future of Artificial Intelligence\" and will have \"their own consciousness, sentiments, and self-awareness\".",
+      "tags": [
+        "types of AI",
+        "self-awareness",
+        "future of AI",
+        "hypothetical concepts"
+      ]
+    },
+    {
+      "id": "eti-ch1-q29",
+      "text": "In the application of AI in gaming, what is typically used to enable the machine to think of a large number of possible positions?",
+      "options": [
+        {
+          "id": "eti-ch1-q29-opt1",
+          "text": "Deep Learning algorithms",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q29-opt2",
+          "text": "Neural Networks",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q29-opt3",
+          "text": "Heuristic knowledge",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q29-opt4",
+          "text": "Natural Language Processing",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states that in strategic games, machines can think of many positions \"based on heuristic knowledge\".",
+      "tags": [
+        "applications of AI",
+        "gaming",
+        "strategy",
+        "heuristics"
+      ]
+    },
+    {
+      "id": "eti-ch1-q30",
+      "text": "Which application of AI focuses on enabling computers to understand natural language spoken by humans?",
+      "options": [
+        {
+          "id": "eti-ch1-q30-opt1",
+          "text": "Expert Systems",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q30-opt2",
+          "text": "Vision Systems",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q30-opt3",
+          "text": "Natural Language Processing",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q30-opt4",
+          "text": "Speech Recognition",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text defines Natural Language Processing as making \"it possible to interact with the computer that understands natural language spoken by humans\".",
+      "tags": [
+        "applications of AI",
+        "natural language processing",
+        "human-computer interaction"
+      ]
+    },
+    {
+      "id": "eti-ch1-q31",
+      "text": "What is the primary function of Expert Systems in the realm of AI applications?",
+      "options": [
+        {
+          "id": "eti-ch1-q31-opt1",
+          "text": "To interpret and comprehend visual input on a computer.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q31-opt2",
+          "text": "To enable machines to understand and process spoken language.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q31-opt3",
+          "text": "To integrate machine, software, and special information to provide reasoning and advising.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q31-opt4",
+          "text": "To recognise the shapes of letters and convert them into editable text.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Expert systems \"integrate machine, software, and special information to impart reasoning and advising\" and provide explanations to users.",
+      "tags": [
+        "applications of AI",
+        "expert systems",
+        "reasoning",
+        "advising"
+      ]
+    },
+    {
+      "id": "eti-ch1-q32",
+      "text": "Which of the following is an example of a Vision System application mentioned in the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q32-opt1",
+          "text": "Diagnosing a patient based on spoken symptoms.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q32-opt2",
+          "text": "Recommending products to a customer based on their purchase history.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q32-opt3",
+          "text": "A spying aeroplane taking photographs to figure out spatial information.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q32-opt4",
+          "text": "Converting handwritten notes into digital text.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text provides the example of \"A spying aeroplane takes photographs, which are used to figure out spatial information or map of the areas\" as an application of Vision Systems.",
+      "tags": [
+        "applications of AI",
+        "vision systems",
+        "image processing",
+        "spatial information"
+      ]
+    },
+    {
+      "id": "eti-ch1-q33",
+      "text": "What is the capability of intelligent systems in the context of Speech Recognition, according to the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q33-opt1",
+          "text": "To understand and interpret visual commands given by humans.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q33-opt2",
+          "text": "To analyse and predict stock market trends based on historical data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q33-opt3",
+          "text": "To hear and comprehend language in terms of sentences and their meanings while a human talks to it.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q33-opt4",
+          "text": "To learn and adapt to new environments by interacting with physical sensors.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states that some intelligent systems are \"capable of hearing and comprehending the language in terms of sentences and their meanings while a human talks to it\".",
+      "tags": [
+        "applications of AI",
+        "speech recognition",
+        "natural language understanding",
+        "human-computer interaction"
+      ]
+    },
+    {
+      "id": "eti-ch1-q34",
+      "text": "Which AI application is concerned with reading text written on paper or screen and converting it into editable text?",
+      "options": [
+        {
+          "id": "eti-ch1-q34-opt1",
+          "text": "Speech Recognition",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q34-opt2",
+          "text": "Natural Language Processing",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q34-opt3",
+          "text": "Handwriting Recognition",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q34-opt4",
+          "text": "Vision Systems",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text describes Handwriting Recognition software as reading \"the text written on paper by a pen or on screen by a stylus\" and converting it to editable text.",
+      "tags": [
+        "applications of AI",
+        "handwriting recognition",
+        "text processing",
+        "pattern recognition"
+      ]
+    },
+    {
+      "id": "eti-ch1-q35",
+      "text": "What enables intelligent robots to exhibit intelligence, according to the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q35-opt1",
+          "text": "Their ability to strictly follow pre-programmed instructions without deviation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q35-opt2",
+          "text": "Their reliance on human operators for real-time decision-making.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q35-opt3",
+          "text": "Efficient processors, multiple sensors, huge memory, and the capability to learn and adapt.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q35-opt4",
+          "text": "Their primary function of performing repetitive mechanical tasks with precision.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Intelligent robots have \"efficient processors, multiple sensors and huge memory, to exhibit intelligence\" and are capable of learning and adapting.",
+      "tags": [
+        "applications of AI",
+        "intelligent robots",
+        "robotics",
+        "learning",
+        "adaptation"
+      ]
+    },
+    {
+      "id": "eti-ch1-q36",
+      "text": "What is the fundamental principle behind machine learning as described in the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q36-opt1",
+          "text": "Programming systems to execute specific tasks based on explicit instructions.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q36-opt2",
+          "text": "Enabling systems to automatically learn and improve with experience by recognising patterns in data.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q36-opt3",
+          "text": "Creating algorithms that can solve complex mathematical problems.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q36-opt4",
+          "text": "Developing hardware that can process information at speeds comparable to the human brain.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Machine learning is defined as \"programming the systems in such a way that they automatically learn and improve with experience\" by recognising and understanding input data.",
+      "tags": [
+        "machine learning",
+        "learning",
+        "experience",
+        "data-driven"
+      ]
+    },
+    {
+      "id": "eti-ch1-q37",
+      "text": "Which of the following is NOT listed as a principle underpinning the development of machine learning algorithms?",
+      "options": [
+        {
+          "id": "eti-ch1-q37-opt1",
+          "text": "Statistics",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q37-opt2",
+          "text": "Probability theory",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q37-opt3",
+          "text": "Quantum physics",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q37-opt4",
+          "text": "Logic",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text mentions that machine learning algorithms build knowledge using principles of \"statistics, probability theory, logic, combinatorial optimization, search, reinforcement learning, and control theory\". Quantum physics is not listed.",
+      "tags": [
+        "machine learning",
+        "algorithms",
+        "principles",
+        "statistics",
+        "probability",
+        "logic"
+      ]
+    },
+    {
+      "id": "eti-ch1-q38",
+      "text": "Classifying emails as spam is given as a common example of which type of machine learning?",
+      "options": [
+        {
+          "id": "eti-ch1-q38-opt1",
+          "text": "Unsupervised Learning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q38-opt2",
+          "text": "Reinforcement Learning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q38-opt3",
+          "text": "Supervised Learning",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q38-opt4",
+          "text": "Deep Learning",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text lists \"classifying e-mails as spam\" as a common example of supervised learning.",
+      "tags": [
+        "machine learning",
+        "supervised learning",
+        "classification",
+        "examples"
+      ]
+    },
+    {
+      "id": "eti-ch1-q39",
+      "text": "Which of the following is a key characteristic of unsupervised learning?",
+      "options": [
+        {
+          "id": "eti-ch1-q39-opt1",
+          "text": "It requires a predefined dataset with labeled outputs for training.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q39-opt2",
+          "text": "It learns a function from available training data with explicit input-output pairs.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q39-opt3",
+          "text": "It makes sense of unlabeled data by looking for patterns and trends.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q39-opt4",
+          "text": "It involves training a model through rewards and penalties based on its actions.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Unsupervised learning \"makes sense of unlabeled data without having any predefined dataset for its training\" and looks for patterns and trends.",
+      "tags": [
+        "machine learning",
+        "unsupervised learning",
+        "unlabeled data",
+        "pattern recognition"
+      ]
+    },
+    {
+      "id": "eti-ch1-q40",
+      "text": "K-means is mentioned as a common approach to which type of machine learning?",
+      "options": [
+        {
+          "id": "eti-ch1-q40-opt1",
+          "text": "Supervised Learning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q40-opt2",
+          "text": "Deep Learning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q40-opt3",
+          "text": "Unsupervised Learning",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q40-opt4",
+          "text": "Reinforcement Learning",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text lists \"k-means\" as a common approach to unsupervised learning.",
+      "tags": [
+        "machine learning",
+        "unsupervised learning",
+        "clustering",
+        "k-means"
+      ]
+    },
+    {
+      "id": "eti-ch1-q41",
+      "text": "What is the primary inspiration behind the algorithms used in deep learning?",
+      "options": [
+        {
+          "id": "eti-ch1-q41-opt1",
+          "text": "The principles of statistical modeling and probability theory.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q41-opt2",
+          "text": "The structure and function of the human brain, specifically artificial neural networks.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q41-opt3",
+          "text": "The rules of formal logic and symbolic reasoning.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q41-opt4",
+          "text": "The mechanisms of evolutionary biology and genetic algorithms.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Deep learning algorithms are \"inspired by the structure and function of the brain called artificial neural networks\".",
+      "tags": [
+        "deep learning",
+        "neural networks",
+        "brain-inspired",
+        "subfield of machine learning"
+      ]
+    },
+    {
+      "id": "eti-ch1-q42",
+      "text": "According to the text, the current value of deep learning is primarily derived through which type of learning?",
+      "options": [
+        {
+          "id": "eti-ch1-q42-opt1",
+          "text": "Unsupervised learning from unlabeled data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q42-opt2",
+          "text": "Reinforcement learning through trial and error.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q42-opt3",
+          "text": "Supervised learning or learning from labeled data.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q42-opt4",
+          "text": "Semi-supervised learning with a mix of labeled and unlabeled data.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states, \"All the value today of deep learning is through supervised learning or learning from labelled data and algorithms\".",
+      "tags": [
+        "deep learning",
+        "supervised learning",
+        "labeled data",
+        "current applications"
+      ]
+    },
+    {
+      "id": "eti-ch1-q43",
+      "text": "What is a common step in the machine learning process outlined in the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q43-opt1",
+          "text": "Designing physical robots to interact with the environment.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q43-opt2",
+          "text": "Developing new programming languages for AI implementation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q43-opt3",
+          "text": "Training the model on test data sets and revising it as needed.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q43-opt4",
+          "text": "Implementing the trained model directly into hardware systems.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text includes \"Trains the model on test data sets, revising it as needed\" as a step in the Machine Learning process.",
+      "tags": [
+        "machine learning process",
+        "model training",
+        "testing",
+        "revision"
+      ]
+    },
+    {
+      "id": "eti-ch1-q44",
+      "text": "The rapid growth of deep learning is closely linked to the explosion of which type of data?",
+      "options": [
+        {
+          "id": "eti-ch1-q44-opt1",
+          "text": "Structured data from traditional databases.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q44-opt2",
+          "text": "Small, meticulously curated datasets.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q44-opt3",
+          "text": "Big data from sources like social media and the internet.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q44-opt4",
+          "text": "Analog data from physical sensors and measurements.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text mentions that \"Deep learning has evolved hand-in-hand with the digital era, which has brought about an explosion of data in all forms and from every region of the world. This data, known simply as big data...\".",
+      "tags": [
+        "deep learning",
+        "big data",
+        "digital era",
+        "data sources"
+      ]
+    },
+    {
+      "id": "eti-ch1-q45",
+      "text": "According to the text, why are companies increasingly adapting to AI systems?",
+      "options": [
+        {
+          "id": "eti-ch1-q45-opt1",
+          "text": "To reduce the need for human creativity and innovation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q45-opt2",
+          "text": "Because AI systems are inherently more cost-effective than human labor in all tasks.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q45-opt3",
+          "text": "To unravel the wealth of information in vast amounts of unstructured data that is difficult for humans to comprehend.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q45-opt4",
+          "text": "Due to the increasing limitations and inaccuracies of traditional software systems.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Companies are adapting to AI systems to \"unravel this wealth of information\" in vast, unstructured data.",
+      "tags": [
+        "AI adoption",
+        "big data",
+        "data analysis",
+        "automation"
+      ]
+    },
+    {
+      "id": "eti-ch1-q46",
+      "text": "Facial recognition is given as an application of which of the following?",
+      "options": [
+        {
+          "id": "eti-ch1-q46-opt1",
+          "text": "Natural Language Processing",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q46-opt2",
+          "text": "Information Retrieval",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q46-opt3",
+          "text": "Computer vision",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q46-opt4",
+          "text": "Automated email marketing",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text lists \"Computer vision which is used for facial recognition\" as an application.",
+      "tags": [
+        "applications of AI",
+        "applications of machine learning",
+        "computer vision",
+        "facial recognition"
+      ]
+    },
+    {
+      "id": "eti-ch1-q47",
+      "text": "Text search and image search in search engines are examples of which application?",
+      "options": [
+        {
+          "id": "eti-ch1-q47-opt1",
+          "text": "Online Advertising",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q47-opt2",
+          "text": "Automated email marketing",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q47-opt3",
+          "text": "Information Retrieval",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q47-opt4",
+          "text": "Medical diagnosis",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text mentions \"Information Retrieval from search engines like text search for image search\" as an application.",
+      "tags": [
+        "applications of AI",
+        "applications of machine learning",
+        "information retrieval",
+        "search engines"
+      ]
+    },
+    {
+      "id": "eti-ch1-q48",
+      "text": "Photo tagging on social media platforms is given as an example application of which field?",
+      "options": [
+        {
+          "id": "eti-ch1-q48-opt1",
+          "text": "Computer Vision",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q48-opt2",
+          "text": "Online Advertising",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q48-opt3",
+          "text": "Natural language processing",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q48-opt4",
+          "text": "Medical diagnosis",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states, \"Natural language processing for applications like photo tagging. The best example to explain this scenario is used in Facebook\".",
+      "tags": [
+        "applications of AI",
+        "applications of machine learning",
+        "natural language processing",
+        "photo tagging"
+      ]
+    },
+    {
+      "id": "eti-ch1-q49",
+      "text": "Medical diagnosis of cancer tumours is listed as an application of which of the following?",
+      "options": [
+        {
+          "id": "eti-ch1-q49-opt1",
+          "text": "Online Advertising",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q49-opt2",
+          "text": "Natural Language Processing",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q49-opt3",
+          "text": "Medical diagnosis",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q49-opt4",
+          "text": "Automated email marketing",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text directly mentions \"Medical diagnosis of cancer tumors or anomaly identification of any chronic disease\" as an application.",
+      "tags": [
+        "applications of AI",
+        "applications of machine learning",
+        "medical diagnosis",
+        "healthcare"
+      ]
+    },
+    {
+      "id": "eti-ch1-q50",
+      "text": "Providing purchasing suggestions on an e-commerce site is an example of which type of AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q50-opt1",
+          "text": "General AI",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q50-opt2",
+          "text": "Super AI",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q50-opt3",
+          "text": "Narrow AI",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q50-opt4",
+          "text": "Theory of Mind AI",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "\"Purchasing suggestions on e-commerce site\" is listed as an example of Narrow AI.",
+      "tags": [
+        "types of AI",
+        "narrow AI",
+        "examples",
+        "e-commerce"
+      ]
+    },
+    {
+      "id": "eti-ch1-q51",
+      "text": "IBM's Deep Blue system, known for playing chess, is an example of which type of AI based on functionality?",
+      "options": [
+        {
+          "id": "eti-ch1-q51-opt1",
+          "text": "Limited Memory",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q51-opt2",
+          "text": "Theory of Mind",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q51-opt3",
+          "text": "Reactive Machines",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q51-opt4",
+          "text": "Self-Awareness",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "\"IBM's Deep Blue system is an example of reactive machines\".",
+      "tags": [
+        "types of AI",
+        "reactive machines",
+        "examples",
+        "Deep Blue",
+        "gaming"
+      ]
+    },
+    {
+      "id": "eti-ch1-q52",
+      "text": "Google's AlphaGo, which plays the game Go, is also given as an example of which type of AI based on functionality?",
+      "options": [
+        {
+          "id": "eti-ch1-q52-opt1",
+          "text": "Limited Memory",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q52-opt2",
+          "text": "Theory of Mind",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q52-opt3",
+          "text": "Reactive Machines",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q52-opt4",
+          "text": "Self-Awareness",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "\"Google's AlphaGo is also an example of reactive machines\".",
+      "tags": []
+    },
+    {
+      "id": "eti-ch1-q53",
+      "text": "Which of the following best describes the concept of \"knowledge\" as defined in the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q53-opt1",
+          "text": "Raw symbols representing properties of objects and events.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q53-opt2",
+          "text": "A message containing relevant meaning for decision-making.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q53-opt3",
+          "text": "The cognition (know-what), capacity to act (know-how), and understanding (know-why).",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q53-opt4",
+          "text": "The ability to sense the environment and control actions.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Knowledge is defined as \"(1) cognition or recognition (know-what), (2) capacity to act(know-how), and(3)understanding (know-why)\".",
+      "tags": [
+        "fundamental concepts",
+        "data",
+        "information",
+        "knowledge",
+        "definitions"
+      ]
+    },
+    {
+      "id": "eti-ch1-q54",
+      "text": "What does the text define as the \"ability to sense the environment, to make decisions, and to control action\"?",
+      "options": [
+        {
+          "id": "eti-ch1-q54-opt1",
+          "text": "Cognition",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q54-opt2",
+          "text": "Reasoning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q54-opt3",
+          "text": "Intelligence",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q54-opt4",
+          "text": "Learning",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Intelligence \"requires ability to sense the environment, to make decisions, and to control action\".",
+      "tags": [
+        "fundamental concepts",
+        "intelligence",
+        "definition",
+        "capabilities"
+      ]
+    },
+    {
+      "id": "eti-ch1-q55",
+      "text": "The art and science of bringing learning, adaptation, and self-organisation to machines is referred to as:",
+      "options": [
+        {
+          "id": "eti-ch1-q55-opt1",
+          "text": "Machine Learning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q55-opt2",
+          "text": "Deep Learning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q55-opt3",
+          "text": "Artificial Intelligence",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q55-opt4",
+          "text": "Neural Networking",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "\"The art and science of bringing learning, adaptation and self-organization to the machine is the art of Artificial Intelligence\".",
+      "tags": [
+        "definition",
+        "learning",
+        "adaptation",
+        "self-organisation"
+      ]
+    },
+    {
+      "id": "eti-ch1-q56",
+      "text": "What is a crucial requirement for individuals pursuing a career in Artificial Intelligence, besides a foundation in math, technology, logic, and engineering?",
+      "options": [
+        {
+          "id": "eti-ch1-q56-opt1",
+          "text": "Extensive experience in traditional programming languages.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q56-opt2",
+          "text": "Good communication skills (written and verbal).",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q56-opt3",
+          "text": "A strong background in psychology and philosophy.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q56-opt4",
+          "text": "Expertise in electronic hardware design and maintenance.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states that \"good communication skills (written and verbal) are imperative to convey how AI services and tools will help when employed within industry settings\".",
+      "tags": [
+        "careers in AI",
+        "skills required",
+        "communication skills",
+        "education"
+      ]
+    },
+    {
+      "id": "eti-ch1-q57",
+      "text": "In the context of \"Act Well\" approach to AI, what is the primary objective for a given set of inputs?",
+      "options": [
+        {
+          "id": "eti-ch1-q57-opt1",
+          "text": "To generate a provably correct and optimal output.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q57-opt2",
+          "text": "To perfectly mimic the sequence of reasoning steps followed by a human.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q57-opt3",
+          "text": "To generate an appropriate output that gets the job done.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q57-opt4",
+          "text": "To develop a formal model of the problem-solving process.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The \"Act Well\" approach aims to \"generate an appropriate output that is not necessarily correct but gets the job done\".",
+      "tags": [
+        "AI approaches",
+        "act well",
+        "heuristics",
+        "output generation"
+      ]
+    },
+    {
+      "id": "eti-ch1-q58",
+      "text": "What was the primary goal of the GPS (General Problem Solver) program in the context of the \"Think like humans\" approach?",
+      "options": [
+        {
+          "id": "eti-ch1-q58-opt1",
+          "text": "To produce human-like behaviour regardless of the reasoning process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q58-opt2",
+          "text": "To simulate a psychotherapist interacting with a patient.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q58-opt3",
+          "text": "To produce a sequence of reasoning steps similar to those followed by a person solving the same task.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q58-opt4",
+          "text": "To develop formal models of knowledge representation.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The goal of GPS was \"not just to produce humanlike behavior... but to produce a sequence of steps of the reasoning process that was similar to the steps followed by a person in solving the same task\".",
+      "tags": [
+        "AI approaches",
+        "think like humans",
+        "cognitive science",
+        "problem solving",
+        "GPS"
+      ]
+    },
+    {
+      "id": "eti-ch1-q59",
+      "text": "In the context of the \"Act like humans\" approach, what is the main focus of evaluation?",
+      "options": [
+        {
+          "id": "eti-ch1-q59-opt1",
+          "text": "The correctness and optimality of the generated output.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q59-opt2",
+          "text": "The efficiency of the algorithms used to achieve the results.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q59-opt3",
+          "text": "The similarity of the machine's results to human results.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q59-opt4",
+          "text": "The transparency and explainability of the machine's reasoning process.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The \"Act like humans\" approach, or behaviorist approach, is \"Not interested in how you get results, just the similarity to what human results are\".",
+      "tags": [
+        "AI approaches",
+        "act like humans",
+        "behaviorist approach",
+        "evaluation"
+      ]
+    },
+    {
+      "id": "eti-ch1-q60",
+      "text": "Which of the following is listed as a \"core component\" of AI in the provided text?",
+      "options": [
+        {
+          "id": "eti-ch1-q60-opt1",
+          "text": "Knowledge",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q60-opt2",
+          "text": "Reasoning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q60-opt3",
+          "text": "Logic",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q60-opt4",
+          "text": "Natural Language Processing",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text identifies \"logic, cognition and computation\" as core components.",
+      "tags": [
+        "components of AI",
+        "core components",
+        "logic",
+        "cognition",
+        "computation"
+      ]
+    },
+    {
+      "id": "eti-ch1-q61",
+      "text": "According to the text, which of the following concepts are derived from logic within the core components of AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q61-opt1",
+          "text": "Learning and Adaptation",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q61-opt2",
+          "text": "Memory and Perception",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q61-opt3",
+          "text": "Propositional logic and predicate calculus",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q61-opt4",
+          "text": "Belief and Desire",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The concepts derived from logic include \"propositional logic, tautology, predicate calculus, model and temporal logic\".",
+      "tags": [
+        "components of AI",
+        "core concepts",
+        "logic",
+        "propositional logic",
+        "predicate calculus"
+      ]
+    },
+    {
+      "id": "eti-ch1-q62",
+      "text": "In the context of the three-dimensional model of AI, what constitutes the z-direction?",
+      "options": [
+        {
+          "id": "eti-ch1-q62-opt1",
+          "text": "The core theoretical foundations of logic, cognition, and computation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q62-opt2",
+          "text": "The application-oriented components like knowledge, reasoning, and interface.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q62-opt3",
+          "text": "Correlated systems of physical origin such as language, vision, and perception.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q62-opt4",
+          "text": "The programming languages and tools used for AI development.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The z-direction \"consists of correlated systems of physical origin such as language, vision and perception\".",
+      "tags": [
+        "AI dimensions",
+        "three-dimensional model",
+        "language",
+        "vision",
+        "perception"
+      ]
+    },
+    {
+      "id": "eti-ch1-q63",
+      "text": "Which philosopher's theory of syllogism contributed to knowledge-based on logic, as mentioned in the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q63-opt1",
+          "text": "Turing",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q63-opt2",
+          "text": "Kant",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q63-opt3",
+          "text": "Aristotle",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q63-opt4",
+          "text": "Russell",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text mentions \"Aristotle's theory of syllogism\" as contributing to knowledge-based on logic.",
+      "tags": [
+        "history of AI",
+        "logic",
+        "philosophy",
+        "Aristotle",
+        "syllogism"
+      ]
+    },
+    {
+      "id": "eti-ch1-q64",
+      "text": "According to the text, what was the significant contribution of Turing in the development of AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q64-opt1",
+          "text": "Integrating reasoning with knowledge through logical formalism.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q64-opt2",
+          "text": "Correlating logic with mathematics.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q64-opt3",
+          "text": "Developing the theory of computation for mechanization.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q64-opt4",
+          "text": "Demonstrating the power of computation logic.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states that \"it was Turing who developed the theory of computation for mechanization\".",
+      "tags": [
+        "history of AI",
+        "computation",
+        "Turing",
+        "mechanization"
+      ]
+    },
+    {
+      "id": "eti-ch1-q65",
+      "text": "In the context of AI interfaces, what example is given for an interface between experts in one domain and experts in another domain?",
+      "options": [
+        {
+          "id": "eti-ch1-q65-opt1",
+          "text": "A program",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q65-opt2",
+          "text": "A robot",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q65-opt3",
+          "text": "Human-to-human interaction",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q65-opt4",
+          "text": "Hardware",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states, \"The interface may be between human and human, i.e. experts in one domain to experts in another domain\".",
+      "tags": [
+        "AI dimensions",
+        "interface",
+        "communication",
+        "human interaction"
+      ]
+    },
+    {
+      "id": "eti-ch1-q66",
+      "text": "According to the text, what is the basis of Speech processing and vision within the coarse components of AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q66-opt1",
+          "text": "The principle of logical deduction and inference.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q66-opt2",
+          "text": "Primarily based on cognitive models of learning and memory.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q66-opt3",
+          "text": "Mainly based on the principle of pattern recognition.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q66-opt4",
+          "text": "A combination of knowledge-based systems and heuristic search.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text mentions that \"Speech processing and vision are based mainly on the principle of pattern recognition\".",
+      "tags": [
+        "components of AI",
+        "coarse components",
+        "speech processing",
+        "vision",
+        "pattern recognition"
+      ]
+    },
+    {
+      "id": "eti-ch1-q67",
+      "text": "Which of the following factors characterises a career in artificial intelligence, according to the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q67-opt1",
+          "text": "Primarily manual labour and physical dexterity.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q67-opt2",
+          "text": "Routine data entry and administrative tasks.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q67-opt3",
+          "text": "The use of sophisticated computer software.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q67-opt4",
+          "text": "Largely focused on interpersonal customer service roles.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text lists \"The use of sophisticated computer software\" as a factor characterizing a career in AI.",
+      "tags": [
+        "careers in AI",
+        "skills required",
+        "technology",
+        "software"
+      ]
+    },
+    {
+      "id": "eti-ch1-q68",
+      "text": "Which of the following is NOT listed as a type of AI based on capabilities in the provided text?",
+      "options": [
+        {
+          "id": "eti-ch1-q68-opt1",
+          "text": "Weak AI",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q68-opt2",
+          "text": "General AI",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q68-opt3",
+          "text": "Strong AI",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q68-opt4",
+          "text": "Theory of Mind AI",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "The types of AI based on capabilities listed are Narrow AI (or Weak AI), General AI, and Super AI (or strong AI characteristics are mentioned under Super AI). Theory of Mind AI is a type based on functionality.",
+      "tags": [
+        "types of AI",
+        "capabilities",
+        "weak AI",
+        "narrow AI",
+        "general AI",
+        "strong AI",
+        "super AI"
+      ]
+    },
+    {
+      "id": "eti-ch1-q69",
+      "text": "What is the key distinction between Narrow AI and General AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q69-opt1",
+          "text": "Narrow AI can process more data than General AI.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q69-opt2",
+          "text": "General AI can perform a wider range of intellectual tasks with human-like efficiency, unlike Narrow AI which is limited to specific tasks.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q69-opt3",
+          "text": "Narrow AI is based on machine learning, while General AI is based on deep learning.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q69-opt4",
+          "text": "General AI systems currently exist and are widely used, unlike Narrow AI which is still under development.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Narrow AI is for dedicated tasks, while General AI aims to perform any intellectual task with human efficiency.",
+      "tags": [
+        "types of AI",
+        "narrow AI",
+        "weak AI",
+        "general AI",
+        "strong AI",
+        "comparison"
+      ]
+    },
+    {
+      "id": "eti-ch1-q70",
+      "text": "Which of the following is a characteristic often associated with Super AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q70-opt1",
+          "text": "The inability to learn new tasks without explicit human guidance.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q70-opt2",
+          "text": "Performing specific tasks better than humans but lacking cognitive properties.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q70-opt3",
+          "text": "The ability to think, reason, solve puzzles, make judgments, plan, learn, and communicate by its own.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q70-opt4",
+          "text": "Being limited to reacting to current scenarios without storing past experiences.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Key characteristics of Super AI include \"the ability to think, to reason, solve the puzzle, make judgments, plan, learn, and communicate by its own\".",
+      "tags": [
+        "types of AI",
+        "super AI",
+        "characteristics",
+        "future of AI"
+      ]
+    },
+    {
+      "id": "eti-ch1-q71",
+      "text": "What is a primary limitation of Reactive Machines compared to Limited Memory AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q71-opt1",
+          "text": "Reactive Machines require more computational power.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q71-opt2",
+          "text": "Reactive Machines cannot use past experiences for future actions, unlike Limited Memory AI.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q71-opt3",
+          "text": "Limited Memory AI is restricted to reacting only to the current scenario.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q71-opt4",
+          "text": "Reactive Machines are incapable of processing sensory input from the environment.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Reactive machines \"do not store memories or past experiences,\" while Limited Memory machines can store data for a short period.",
+      "tags": [
+        "types of AI",
+        "reactive machines",
+        "limited memory",
+        "comparison",
+        "memory"
+      ]
+    },
+    {
+      "id": "eti-ch1-q72",
+      "text": "What capability distinguishes Theory of Mind AI from Limited Memory AI?",
+      "options": [
+        {
+          "id": "eti-ch1-q72-opt1",
+          "text": "The ability to store and use past experiences for a short duration.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q72-opt2",
+          "text": "The capacity to react optimally to the current scenario.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q72-opt3",
+          "text": "The understanding of human emotions, beliefs, and social interaction.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q72-opt4",
+          "text": "The possession of self-awareness and consciousness.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Theory of Mind AI should understand human emotions and interact socially, which is beyond the capability of simply storing limited memory.",
+      "tags": [
+        "types of AI",
+        "theory of mind",
+        "limited memory",
+        "social intelligence",
+        "understanding"
+      ]
+    },
+    {
+      "id": "eti-ch1-q73",
+      "text": "Which of the following is an example of AI playing a crucial role in strategic games?",
+      "options": [
+        {
+          "id": "eti-ch1-q73-opt1",
+          "text": "Generating realistic background scenery in a video game.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q73-opt2",
+          "text": "Controlling the movement of non-player characters based on predefined scripts.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q73-opt3",
+          "text": "Enabling a machine to think of numerous possible game positions based on heuristic knowledge in chess.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q73-opt4",
+          "text": "Allowing players to communicate with each other through in-game voice chat.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text mentions AI playing a crucial role in strategic games like chess by thinking of many positions based on heuristic knowledge.",
+      "tags": [
+        "applications of AI",
+        "gaming",
+        "strategic games",
+        "chess",
+        "heuristics"
+      ]
+    },
+    {
+      "id": "eti-ch1-q74",
+      "text": "In the context of Vision Systems, what application is mentioned for clinical expert systems used by doctors?",
+      "options": [
+        {
+          "id": "eti-ch1-q74-opt1",
+          "text": "Recognising the faces of individuals in a crowd.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q74-opt2",
+          "text": "Analysing satellite imagery for geographical mapping.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q74-opt3",
+          "text": "Diagnosing patients.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q74-opt4",
+          "text": "Converting spoken medical reports into text.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text states that \"Doctors use clinical expert system to diagnose the patient\" as an example of a Vision System application.",
+      "tags": [
+        "applications of AI",
+        "vision systems",
+        "expert systems",
+        "medical diagnosis",
+        "healthcare"
+      ]
+    },
+    {
+      "id": "eti-ch1-q75",
+      "text": "Which AI application is used by police to recognise criminals based on stored portraits made by forensic artists?",
+      "options": [
+        {
+          "id": "eti-ch1-q75-opt1",
+          "text": "Speech Recognition",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q75-opt2",
+          "text": "Handwriting Recognition",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q75-opt3",
+          "text": "Vision Systems",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q75-opt4",
+          "text": "Expert Systems",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text mentions that \"Police use computer software that can recognize the face of criminal with the stored portrait made by forensic artist\" under Vision Systems.",
+      "tags": [
+        "applications of AI",
+        "vision systems",
+        "law enforcement",
+        "facial recognition"
+      ]
+    },
+    {
+      "id": "eti-ch1-q76",
+      "text": "What capability of intelligent systems is highlighted regarding Speech Recognition in the presence of background noise or different accents?",
+      "options": [
+        {
+          "id": "eti-ch1-q76-opt1",
+          "text": "To filter out all irrelevant sounds and focus only on the main speaker's voice.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q76-opt2",
+          "text": "To understand only standard pronunciations and clear speech patterns.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q76-opt3",
+          "text": "To handle different accents, slang words, and noise in the background.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q76-opt4",
+          "text": "To require speakers to use specific keywords and a limited vocabulary.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text mentions that Speech Recognition systems \"can handle different accents, slang words, noise in the background\".",
+      "tags": [
+        "applications of AI",
+        "speech recognition",
+        "natural language understanding",
+        "robustness"
+      ]
+    },
+    {
+      "id": "eti-ch1-q77",
+      "text": "What is the role of sensors in intelligent robots as described in the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q77-opt1",
+          "text": "To perform complex calculations and processing of information.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q77-opt2",
+          "text": "To store vast amounts of data and instructions.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q77-opt3",
+          "text": "To detect physical data from the real world such as light, heat, temperature, movement, sound, bump, and pressure.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q77-opt4",
+          "text": "To execute pre-programmed tasks with precision and efficiency.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Robots have sensors \"to detect physical data from the real world such as light, heat, temperature, movement, sound, bump, and pressure\".",
+      "tags": [
+        "applications of AI",
+        "intelligent robots",
+        "robotics",
+        "sensors",
+        "environment"
+      ]
+    },
+    {
+      "id": "eti-ch1-q78",
+      "text": "What is the meaning of \"learning\" in the context of machine learning, according to the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q78-opt1",
+          "text": "The process of memorizing large datasets for later retrieval.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q78-opt2",
+          "text": "The ability to follow a predefined set of instructions to perform a task.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q78-opt3",
+          "text": "Recognising and understanding input data and making wise decisions based on it.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q78-opt4",
+          "text": "The capacity to adapt to new hardware configurations and software updates.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "In machine learning, \"learning means recognizing and understanding the input data and making wise decisions based on the supplied data\".",
+      "tags": [
+        "machine learning",
+        "learning",
+        "definition",
+        "decision-making"
+      ]
+    },
+    {
+      "id": "eti-ch1-q79",
+      "text": "Which of the following is listed as an application area of machine learning in the text?",
+      "options": [
+        {
+          "id": "eti-ch1-q79-opt1",
+          "text": "Designing user interfaces for software applications.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q79-opt2",
+          "text": "Developing new types of computer processors.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q79-opt3",
+          "text": "Forecasting (e.g., stock market trends).",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q79-opt4",
+          "text": "Creating secure network protocols for data transmission.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "\"Forecasting (e.g., stock market trends)\" is listed as one of the applications of algorithms developed through machine learning.",
+      "tags": [
+        "applications of AI",
+        "applications of machine learning",
+        "forecasting",
+        "finance"
+      ]
+    },
+    {
+      "id": "eti-ch1-q80",
+      "text": "What is the primary task in supervised learning?",
+      "options": [
+        {
+          "id": "eti-ch1-q80-opt1",
+          "text": "To discover hidden patterns in unlabeled data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q80-opt2",
+          "text": "To learn a policy that maximizes cumulative reward in an interactive environment.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q80-opt3",
+          "text": "To learn a function that maps input to output based on available training data with labeled examples.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q80-opt4",
+          "text": "To group similar data points into clusters without prior knowledge.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Supervised learning \"deals with learning a function from available training data\" with labeled examples.",
+      "tags": [
+        "machine learning",
+        "supervised learning",
+        "training data",
+        "labeled data",
+        "function mapping"
+      ]
+    },
+    {
+      "id": "eti-ch1-q81",
+      "text": "Labeling webpages based on their content is given as a common example of which type of machine learning?",
+      "options": [
+        {
+          "id": "eti-ch1-q81-opt1",
+          "text": "Unsupervised Learning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q81-opt2",
+          "text": "Reinforcement Learning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q81-opt3",
+          "text": "Supervised Learning",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q81-opt4",
+          "text": "Deep Learning",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text includes \"labeling webpages based on their content\" as a common example of supervised learning.",
+      "tags": [
+        "machine learning",
+        "supervised learning",
+        "classification",
+        "examples",
+        "web analysis"
+      ]
+    },
+    {
+      "id": "eti-ch1-q82",
+      "text": "Voice recognition is listed as a common example of which type of machine learning?",
+      "options": [
+        {
+          "id": "eti-ch1-q82-opt1",
+          "text": "Unsupervised Learning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q82-opt2",
+          "text": "Reinforcement Learning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q82-opt3",
+          "text": "Supervised Learning",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q82-opt4",
+          "text": "Deep Learning",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The text includes \"voice recognition\" as a common example of supervised learning.",
+      "tags": [
+        "machine learning",
+        "supervised learning",
+        "classification",
+        "examples",
+        "speech recognition"
+      ]
+    },
+    {
+      "id": "eti-ch1-q83",
+      "text": "Identifying relevant data sets and preparing them for analysis is a step in which process?",
+      "options": [
+        {
+          "id": "eti-ch1-q83-opt1",
+          "text": "Artificial Neural Network design",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q83-opt2",
+          "text": "Machine Learning",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q83-opt3",
+          "text": "Expert System development",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q83-opt4",
+          "text": "Robotic process automation",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "\"Identifies relevant data sets and prepares them for analysis\" is the first step listed in the Machine Learning process.",
+      "tags": [
+        "machine learning process",
+        "data preparation",
+        "data analysis"
+      ]
+    },
+    {
+      "id": "eti-ch1-q84",
+      "text": "Choosing the type of algorithm to use is a step in which process?",
+      "options": [
+        {
+          "id": "eti-ch1-q84-opt1",
+          "text": "Artificial Neural Network training",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q84-opt2",
+          "text": "Machine Learning",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q84-opt3",
+          "text": "Knowledge-Based System implementation",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q84-opt4",
+          "text": "Computer Vision application development",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "\"Chooses the type of algorithm to use\" is listed as a step in the Machine Learning process.",
+      "tags": [
+        "machine learning process",
+        "algorithm selection"
+      ]
+    },
+    {
+      "id": "eti-ch1-q85",
+      "text": "Building an analytical model based on the chosen algorithm is a step in which process?",
+      "options": [
+        {
+          "id": "eti-ch1-q85-opt1",
+          "text": "Data warehousing",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q85-opt2",
+          "text": "Machine Learning",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q85-opt3",
+          "text": "Natural Language Processing",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q85-opt4",
+          "text": "Cloud computing deployment",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "\"Builds an analytical model based on the algorithm used\" is listed as a step in the Machine Learning process.",
+      "tags": [
+        "machine learning process",
+        "model building",
+        "analytical model"
+      ]
+    },
+    {
+      "id": "eti-ch1-q86",
+      "text": "Running the model to generate test scores is a step in which process?",
+      "options": [
+        {
+          "id": "eti-ch1-q86-opt1",
+          "text": "Data mining",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q86-opt2",
+          "text": "Machine Learning",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q86-opt3",
+          "text": "Information retrieval",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q86-opt4",
+          "text": "Computer security",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "\"Runs the model to generate test scores\" is listed as a step in the Machine Learning process.",
+      "tags": [
+        "machine learning process",
+        "model testing",
+        "evaluation"
+      ]
+    }
+  ]
+}

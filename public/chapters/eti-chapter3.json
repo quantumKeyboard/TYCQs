@@ -1,0 +1,4661 @@
+{
+  "chapterId": "eti-chapter3",
+  "title": "Basics of Digital Forensics",
+  "description": "This chapter provides an introduction to digital forensics, its history, rules, definition, investigation goals, various investigation models, and ethical considerations.",
+  "questions": [
+    {
+      "id": "eti-ch3-q1",
+      "text": "Which of the following best describes the primary aim of digital forensics?",
+      "options": [
+        {
+          "id": "eti-ch3-q1-opt1",
+          "text": "To modify digital evidence for presentation in court",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q1-opt2",
+          "text": "To manipulate digital devices involved in a crime scene",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q1-opt3",
+          "text": "To recover, investigate, validate, and present facts about digital evidence",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q1-opt4",
+          "text": "To destroy digital evidence that may incriminate a suspect",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Digital forensics encompasses the identification, recovery, investigation, validation, and presentation of facts regarding digital evidence found on computers or similar digital storage media devices.",
+      "tags": [
+        "definition",
+        "digital forensics",
+        "introduction",
+        "investigation"
+      ]
+    },
+    {
+      "id": "eti-ch3-q2",
+      "text": "When did the field of personal computer forensics first emerge as a distinct area?",
+      "options": [
+        {
+          "id": "eti-ch3-q2-opt1",
+          "text": "In the early 1970s before personal computers were widely available",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q2-opt2",
+          "text": "In the 1980s when personal computers became a viable option for buyers",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q2-opt3",
+          "text": "In the early 1990s with the rise of the internet",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q2-opt4",
+          "text": "In the 2000s following significant increases in cybercrime",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The field of pc forensics began in the 1980s when personal computers became a viable possibility for the buyer.",
+      "tags": [
+        "history",
+        "computer forensics",
+        "personal computers",
+        "emergence"
+      ]
+    },
+    {
+      "id": "eti-ch3-q3",
+      "text": "What was the name of the Federal Bureau of Investigation program created in 1984 related to digital evidence?",
+      "options": [
+        {
+          "id": "eti-ch3-q3-opt1",
+          "text": "Cybercrime Analysis Unit",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q3-opt2",
+          "text": "Digital Forensics Task Force",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q3-opt3",
+          "text": "Magnet Media Program",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q3-opt4",
+          "text": "Electronic Evidence Division",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "In 1984, an associate Federal Bureau of Investigation program was created, which was referred to as magnet media program.",
+      "tags": [
+        "history",
+        "FBI",
+        "law enforcement",
+        "Magnet Media Program"
+      ]
+    },
+    {
+      "id": "eti-ch3-q4",
+      "text": "What is the current name of the FBI program that originated as the Magnet Media Program?",
+      "options": [
+        {
+          "id": "eti-ch3-q4-opt1",
+          "text": "Digital Crime Investigation Unit",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q4-opt2",
+          "text": "Forensic Computer Analysis Team",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q4-opt3",
+          "text": "Computer Analysis and Response Team (CART)",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q4-opt4",
+          "text": "Electronic Data Recovery Division",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Magnet Media Program is currently referred to as Computer Analysis and Response Team (CART).",
+      "tags": [
+        "history",
+        "FBI",
+        "law enforcement",
+        "CART"
+      ]
+    },
+    {
+      "id": "eti-ch3-q5",
+      "text": "Who is often referred to as the 'Father of Computer Forensics'?",
+      "options": [
+        {
+          "id": "eti-ch3-q5-opt1",
+          "text": "Robert Mueller",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q5-opt2",
+          "text": "Vinton Cerf",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q5-opt3",
+          "text": "Michael Anderson",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q5-opt4",
+          "text": "Tim Berners-Lee",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Michael Anderson, the Father of Computer Forensics, came into limelight during this period (the 1980s).",
+      "tags": [
+        "history",
+        "computer forensics",
+        "Michael Anderson",
+        "pioneer"
+      ]
+    },
+    {
+      "id": "eti-ch3-q6",
+      "text": "In which year was the International Organization on Computer Evidence (IOCE) formed?",
+      "options": [
+        {
+          "id": "eti-ch3-q6-opt1",
+          "text": "1985",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q6-opt2",
+          "text": "1990",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q6-opt3",
+          "text": "1995",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q6-opt4",
+          "text": "2000",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "International Organization on Computer Evidence (IOCE) was formed in 1995.",
+      "tags": [
+        "history",
+        "international cooperation",
+        "IOCE",
+        "digital evidence"
+      ]
+    },
+    {
+      "id": "eti-ch3-q7",
+      "text": "What was a significant declaration made by major countries in 1997 regarding law enforcement and sophisticated crimes?",
+      "options": [
+        {
+          "id": "eti-ch3-q7-opt1",
+          "text": "The establishment of international cybercrime treaties",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q7-opt2",
+          "text": "The mandate for national digital forensic laboratories",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q7-opt3",
+          "text": "The need to train and equip law enforcement personnel to handle sophisticated crimes",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q7-opt4",
+          "text": "The standardization of digital evidence collection procedures",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "In 1997, the great countries declared that law enforcement personnel should be trained and equipped to deal with sophisticated crimes.",
+      "tags": [
+        "history",
+        "law enforcement",
+        "training",
+        "cybercrime"
+      ]
+    },
+    {
+      "id": "eti-ch3-q8",
+      "text": "Which of the following rules is paramount when conducting a digital forensics investigation?",
+      "options": [
+        {
+          "id": "eti-ch3-q8-opt1",
+          "text": "Examining the original media is always the most thorough approach.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q8-opt2",
+          "text": "A copy of the evidence should be made on non-sterile media to preserve any potential hidden data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q8-opt3",
+          "text": "An examination should never be performed on the original media",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q8-opt4",
+          "text": "Modifications to the original data are acceptable if they aid in the investigation.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Rule 1 of digital forensics states that an examination should never be performed on the original media.",
+      "tags": [
+        "rules",
+        "best practices",
+        "original media",
+        "preservation"
+      ]
+    },
+    {
+      "id": "eti-ch3-q9",
+      "text": "What type of copy must be made of digital evidence for forensic examination?",
+      "options": [
+        {
+          "id": "eti-ch3-q9-opt1",
+          "text": "A standard file copy",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q9-opt2",
+          "text": "A compressed backup",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q9-opt3",
+          "text": "An exact, bit-by-bit copy (bit-stream copy)",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q9-opt4",
+          "text": "A logical copy containing only active files",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The copy of the evidence must be an exact, bit-by-bit copy. (Sometimes referred to as a bit-stream copy).",
+      "tags": [
+        "rules",
+        "evidence acquisition",
+        "bit-stream copy",
+        "exact copy"
+      ]
+    },
+    {
+      "id": "eti-ch3-q10",
+      "text": "Why is it crucial to maintain a clear chain of custody for digital evidence?",
+      "options": [
+        {
+          "id": "eti-ch3-q10-opt1",
+          "text": "To reduce the storage space required for the evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q10-opt2",
+          "text": "To allow multiple investigators to access the evidence simultaneously without logging.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q10-opt3",
+          "text": "To provide an audit log of who might have accessed the evidence and at what time",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q10-opt4",
+          "text": "To simplify the process of presenting the evidence in court by limiting access.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The chain of the custody of all evidence must be clearly maintained to provide an audit log of whom might have accessed the evidence and at what time.",
+      "tags": [
+        "rules",
+        "chain of custody",
+        "evidence integrity",
+        "audit log"
+      ]
+    },
+    {
+      "id": "eti-ch3-q11",
+      "text": "According to the provided text, what is a major goal of digital forensics?",
+      "options": [
+        {
+          "id": "eti-ch3-q11-opt1",
+          "text": "To permanently alter digital data related to a crime.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q11-opt2",
+          "text": "To speculate on past events without factual basis.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q11-opt3",
+          "text": "To duplicate original data and preserve original evidence",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q11-opt4",
+          "text": "To provide biased interpretations of digital information.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Major goal of the process is to duplicate original data and preserve original evidence and then performing the series of investigation by collecting, identifying and validating digital information for the purpose of restructuring past events.",
+      "tags": [
+        "goals",
+        "digital evidence",
+        "preservation",
+        "duplication"
+      ]
+    },
+    {
+      "id": "eti-ch3-q12",
+      "text": "What is a key characteristic that distinguishes a digital forensic investigation?",
+      "options": [
+        {
+          "id": "eti-ch3-q12-opt1",
+          "text": "It relies solely on eyewitness accounts.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q12-opt2",
+          "text": "The scientific procedures and techniques used allow the digital evidence to be admissible in a court of law",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q12-opt3",
+          "text": "It involves subjective interpretation of electronic data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q12-opt4",
+          "text": "It disregards established legal frameworks.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Digital forensic investigation (DFI) is a special type of investigation where the scientific procedures and techniques used will be allowed to view the result- digital evidence- to be admissible in a court of law.",
+      "tags": [
+        "digital forensic investigation",
+        "DFI",
+        "admissibility",
+        "court of law"
+      ]
+    },
+    {
+      "id": "eti-ch3-q13",
+      "text": "Which of the following is an obstacle that a digital forensic investigation must be able to handle?",
+      "options": [
+        {
+          "id": "eti-ch3-q13-opt1",
+          "text": "Ensuring all data is stored in a single, easily accessible location.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q13-opt2",
+          "text": "Ignoring large amounts of irrelevant data to focus on specific files.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q13-opt3",
+          "text": "Handling and locating valid data from large amounts of files stored in a computer system",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q13-opt4",
+          "text": "Assuming that deleted information is always unrecoverable.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The main objective computer forensic investigation is to examine digital evidences and to ensure that they have not been tampered in any manner. To achieve this goal investigation must be able to handle locating certain amount of valid data from large amount of files stored in computer system.",
+      "tags": [
+        "goals",
+        "obstacles",
+        "data volume",
+        "investigation challenges"
+      ]
+    },
+    {
+      "id": "eti-ch3-q14",
+      "text": "What challenge must investigators overcome when dealing with deleted information in a digital forensic investigation?",
+      "options": [
+        {
+          "id": "eti-ch3-q14-opt1",
+          "text": "Assuming deleted files are permanently erased and cannot be recovered.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q14-opt2",
+          "text": "Searching inside the file system when the information may no longer be present",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q14-opt3",
+          "text": "Focusing solely on unallocated space without considering active files.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q14-opt4",
+          "text": "Modifying file system metadata to reveal deleted data.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "It is viable that the information has been deleted, in such situation searching inside the file is worthless. This highlights the challenge of dealing with deleted data.",
+      "tags": [
+        "goals",
+        "obstacles",
+        "deleted data",
+        "data recovery"
+      ]
+    },
+    {
+      "id": "eti-ch3-q15",
+      "text": "What is a significant hurdle for investigators when encountering password-protected files during a digital forensic investigation?",
+      "options": [
+        {
+          "id": "eti-ch3-q15-opt1",
+          "text": "They can readily bypass all forms of encryption without specialized tools.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q15-opt2",
+          "text": "They must find a way to read the protected data in an unauthorized manner",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q15-opt3",
+          "text": "Password protection guarantees the irrelevance of the data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q15-opt4",
+          "text": "Legal frameworks always permit immediate access to password-protected data.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "If the files are secured by some passwords, investigators must find a way to read the protected data in an unauthorized manner.",
+      "tags": [
+        "goals",
+        "obstacles",
+        "password protection",
+        "data access"
+      ]
+    },
+    {
+      "id": "eti-ch3-q16",
+      "text": "What challenge arises when digital data relevant to an investigation is stored on a damaged device?",
+      "options": [
+        {
+          "id": "eti-ch3-q16-opt1",
+          "text": "Investigators can only search for data on working devices",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q16-opt2",
+          "text": "Damaged devices always result in complete data loss.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q16-opt3",
+          "text": "Standard forensic tools are ineffective on damaged media.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q16-opt4",
+          "text": "Legal authorization is automatically revoked for damaged devices.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Data may be stored in damaged device but the investigator searches the data in working devices. This implies the challenge of accessing data on non-functional media.",
+      "tags": [
+        "goals",
+        "obstacles",
+        "damaged devices",
+        "data accessibility"
+      ]
+    },
+    {
+      "id": "eti-ch3-q17",
+      "text": "Why can identifying the appropriate techniques and tools be a lengthy process in digital forensics?",
+      "options": [
+        {
+          "id": "eti-ch3-q17-opt1",
+          "text": "All digital forensic cases follow identical patterns.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q17-opt2",
+          "text": "There is a universal set of tools applicable to every investigation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q17-opt3",
+          "text": "Each and every case is different",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q17-opt4",
+          "text": "Digital forensic technology remains static and rarely evolves.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Major obstacle is that, each and every case is different identifying the techniques and tools will take long time.",
+      "tags": [
+        "goals",
+        "obstacles",
+        "case variability",
+        "tool selection"
+      ]
+    },
+    {
+      "id": "eti-ch3-q18",
+      "text": "What makes it difficult to prove that digital data under examination has not been altered?",
+      "options": [
+        {
+          "id": "eti-ch3-q18-opt1",
+          "text": "Digital data inherently changes over time.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q18-opt2",
+          "text": "There are no methods to track modifications to digital files.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q18-opt3",
+          "text": "It is very tedious to prove that data under examination is unaltered",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q18-opt4",
+          "text": "Legal systems generally assume digital data has been tampered with.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The digital data found should be protected from being modified. It is very tedious to prove that data under examination is unaltered.",
+      "tags": [
+        "goals",
+        "obstacles",
+        "data integrity",
+        "tamper-proofing"
+      ]
+    },
+    {
+      "id": "eti-ch3-q19",
+      "text": "What is a desired element in the field of digital forensics to ensure consistency and reliability?",
+      "options": [
+        {
+          "id": "eti-ch3-q19-opt1",
+          "text": "Flexible investigation procedures that adapt to investigator preference.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q19-opt2",
+          "text": "A lack of standardized techniques to encourage innovation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q19-opt3",
+          "text": "Common procedure for investigation and standard techniques for collecting and preserving digital evidences",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q19-opt4",
+          "text": "Reliance on proprietary tools and methods unique to each organization.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Common procedure for investigation and standard techniques for collecting and preserving digital evidences are desired.",
+      "tags": [
+        "goals",
+        "obstacles",
+        "standardization",
+        "best practices"
+      ]
+    },
+    {
+      "id": "eti-ch3-q20",
+      "text": "What does the 'Identification' phase of the Road map for Digital Forensic Research (RMDFR) involve?",
+      "options": [
+        {
+          "id": "eti-ch3-q20-opt1",
+          "text": "Detailed analysis of collected data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q20-opt2",
+          "text": "Securing and isolating the digital crime scene.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q20-opt3",
+          "text": "Recognizing an incident from indicators and determining its type",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q20-opt4",
+          "text": "Presenting the findings of the investigation in a report.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Identification phase of RMDFR recognizes an incident from indicators and determines its type.",
+      "tags": [
+        "digital forensic models",
+        "RMDFR",
+        "identification",
+        "incident response"
+      ]
+    },
+    {
+      "id": "eti-ch3-q21",
+      "text": "Which action is characteristic of the 'Preservation' stage in the Road map for Digital Forensic Research (RMDFR)?",
+      "options": [
+        {
+          "id": "eti-ch3-q21-opt1",
+          "text": "Conducting an in-depth search of evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q21-opt2",
+          "text": "Writing a report outlining the examination process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q21-opt3",
+          "text": "Stopping or preventing any activities that can damage digital information being collected",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q21-opt4",
+          "text": "Finding and gathering digital information relevant to the investigation.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Preservation stage of RMDFR corresponds to \"freezing the crime scene\" and consists in stopping or preventing any activities that can damage digital information being collected.",
+      "tags": [
+        "digital forensic models",
+        "RMDFR",
+        "preservation",
+        "crime scene"
+      ]
+    },
+    {
+      "id": "eti-ch3-q22",
+      "text": "What is the primary activity during the 'Collection' stage of the Road map for Digital Forensic Research (RMDFR)?",
+      "options": [
+        {
+          "id": "eti-ch3-q22-opt1",
+          "text": "Drawing conclusions based on the evidence found.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q22-opt2",
+          "text": "Systematically searching collected information for evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q22-opt3",
+          "text": "Finding and collecting digital information that may be relevant to the investigation",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q22-opt4",
+          "text": "Outlining the examination process and recovered data in a report.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Collection stage of RMDFR consists in finding and collecting digital information that may be relevant to the investigation.",
+      "tags": [
+        "digital forensic models",
+        "RMDFR",
+        "collection",
+        "evidence acquisition"
+      ]
+    },
+    {
+      "id": "eti-ch3-q23",
+      "text": "What does the 'Examination' stage of the Road map for Digital Forensic Research (RMDFR) entail?",
+      "options": [
+        {
+          "id": "eti-ch3-q23-opt1",
+          "text": "Summarizing the findings of the analysis.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q23-opt2",
+          "text": "Isolating and securing physical and digital evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q23-opt3",
+          "text": "An in-depth systematic search of evidence relating to the incident being investigated",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q23-opt4",
+          "text": "Recognizing an incident and determining its type.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Examination stage of RMDFR consists in an \"in-depth systematic search of evidence\" relating to the incident being investigated.",
+      "tags": [
+        "digital forensic models",
+        "RMDFR",
+        "examination",
+        "evidence analysis"
+      ]
+    },
+    {
+      "id": "eti-ch3-q24",
+      "text": "The 'Analysis' stage of the Road map for Digital Forensic Research (RMDFR) is primarily focused on:",
+      "options": [
+        {
+          "id": "eti-ch3-q24-opt1",
+          "text": "Documenting the physical crime scene.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q24-opt2",
+          "text": "Presenting the recovered data to stakeholders.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q24-opt3",
+          "text": "Drawing conclusions based on evidence found",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q24-opt4",
+          "text": "Identifying and collecting potential digital evidence.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The aim of the Analysis stage of RMDFR is to “draw conclusions based on evidence found\".",
+      "tags": [
+        "digital forensic models",
+        "RMDFR",
+        "analysis",
+        "conclusion"
+      ]
+    },
+    {
+      "id": "eti-ch3-q25",
+      "text": "What is the final phase in the Road map for Digital Forensic Research (RMDFR)?",
+      "options": [
+        {
+          "id": "eti-ch3-q25-opt1",
+          "text": "Collection",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q25-opt2",
+          "text": "Examination",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q25-opt3",
+          "text": "Presentation",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q25-opt4",
+          "text": "Preservation",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The final phase of RMDFR is Reporting, which entails writing a report outlining the examination process and pertinent data recovered. The figure 3.1 labels this as \"Presentation\".",
+      "tags": [
+        "digital forensic models",
+        "RMDFR",
+        "presentation",
+        "reporting"
+      ]
+    },
+    {
+      "id": "eti-ch3-q26",
+      "text": "Which digital forensic model includes a 'Preparation' phase for tools, techniques, and legal authorizations?",
+      "options": [
+        {
+          "id": "eti-ch3-q26-opt1",
+          "text": "Road map for Digital Forensic Research (RMDFR)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q26-opt2",
+          "text": "Abstract Digital Forensic Model (ADFM)",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q26-opt3",
+          "text": "Integrated Digital Investigation Process (IDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q26-opt4",
+          "text": "End to End Digital Investigation Process (EEDIP)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Abstract Digital Forensic Model (ADFM) includes a Preparation phase that involves the preparation of tools, techniques, search warrants and monitoring authorization and management support.",
+      "tags": [
+        "digital forensic models",
+        "ADFM",
+        "preparation",
+        "tools"
+      ]
+    },
+    {
+      "id": "eti-ch3-q27",
+      "text": "What is the focus of the 'Approach Strategy' phase in the Abstract Digital Forensic Model (ADFM)?",
+      "options": [
+        {
+          "id": "eti-ch3-q27-opt1",
+          "text": "To secure and preserve the state of physical and digital evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q27-opt2",
+          "text": "To formulate procedures to maximise untainted evidence collection while minimising impact",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q27-opt3",
+          "text": "To conduct an in-depth systematic search for evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q27-opt4",
+          "text": "To summarise and explain the conclusions of the investigation.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Approach strategy phase of ADFM involves formulating procedures and approach to use in order to maximize the collection of untainted evidence while minimizing the impact to the victim.",
+      "tags": [
+        "digital forensic models",
+        "ADFM",
+        "approach strategy",
+        "evidence collection"
+      ]
+    },
+    {
+      "id": "eti-ch3-q28",
+      "text": "In the Abstract Digital Forensic Model (ADFM), what action follows the 'Collection' phase?",
+      "options": [
+        {
+          "id": "eti-ch3-q28-opt1",
+          "text": "Analysis",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q28-opt2",
+          "text": "Presentation",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q28-opt3",
+          "text": "Examination",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q28-opt4",
+          "text": "Preservation",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The phases of the ADFM model, as shown in Figure 3.2, are Identification, Preparation, Approach Strategy, Preservation, Collection, Examination, Analysis, Presentation, and Returning Evidence.",
+      "tags": [
+        "digital forensic models",
+        "ADFM",
+        "workflow",
+        "investigation phases"
+      ]
+    },
+    {
+      "id": "eti-ch3-q29",
+      "text": "What is the purpose of the 'Returning Evidence' phase in the Abstract Digital Forensic Model (ADFM)?",
+      "options": [
+        {
+          "id": "eti-ch3-q29-opt1",
+          "text": "To document the chain of custody.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q29-opt2",
+          "text": "To ensure the integrity of the evidence throughout the process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q29-opt3",
+          "text": "To return physical and digital property to the proper owner",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q29-opt4",
+          "text": "To present the findings of the investigation.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Returning Evidence phase of ADFM involves physical and digital property being returned to the proper owner.",
+      "tags": [
+        "digital forensic models",
+        "ADFM",
+        "returning evidence",
+        "post-investigation"
+      ]
+    },
+    {
+      "id": "eti-ch3-q30",
+      "text": "Which digital forensic model is also known as DFPM and comprises five groups and seventeen phases?",
+      "options": [
+        {
+          "id": "eti-ch3-q30-opt1",
+          "text": "Abstract Digital Forensic Model (ADFM)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q30-opt2",
+          "text": "End to End Digital Investigation Process (EEDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q30-opt3",
+          "text": "Integrated Digital Investigation Process (IDIP)",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q30-opt4",
+          "text": "Extended Model of Cybercrime Investigation (EMCI)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The DFPM along with 5 groups and 17 phases is proposed by Carrier and Safford. DFPM is named the Integrated Digital Investigation Process (IDIP).",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "Carrier and Safford",
+        "comprehensive model"
+      ]
+    },
+    {
+      "id": "eti-ch3-q31",
+      "text": "What is the primary goal of the 'Readiness phase' in the Integrated Digital Investigation Process (IDIP)?",
+      "options": [
+        {
+          "id": "eti-ch3-q31-opt1",
+          "text": "To detect and confirm a security incident.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q31-opt2",
+          "text": "To collect and analyze physical evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q31-opt3",
+          "text": "To ensure that the operations and infrastructure can fully support an investigation",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q31-opt4",
+          "text": "To review the entire investigation for areas of improvement.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The goal of the Readiness phase in IDIP is to ensure that the operations and infrastructure are able to fully support an investigation.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "readiness phase",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "eti-ch3-q32",
+      "text": "Which two sub-phases are included within the 'Deployment phase' of the Integrated Digital Investigation Process (IDIP)?",
+      "options": [
+        {
+          "id": "eti-ch3-q32-opt1",
+          "text": "Preservation phase and Survey phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q32-opt2",
+          "text": "Documentation phase and Search and collection phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q32-opt3",
+          "text": "Detection and Notification phase; and Confirmation and Authorization phase",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q32-opt4",
+          "text": "Reconstruction phase and Presentation phase",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Deployment phase of IDIP includes two phases: Detection and Notification phase; where the incident is detected and then appropriate people notified; and Confirmation and Authorization phase; which confirms the incident and obtains authorization for legal approval to carry out a search warrant.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "deployment phase",
+        "incident detection"
+      ]
+    },
+    {
+      "id": "eti-ch3-q33",
+      "text": "What is the primary focus of the 'Physical Crime Investigation phase' in the Integrated Digital Investigation Process (IDIP)?",
+      "options": [
+        {
+          "id": "eti-ch3-q33-opt1",
+          "text": "Analyzing digital evidence obtained from computer systems.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q33-opt2",
+          "text": "Preserving the digital crime scene and collecting digital data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q33-opt3",
+          "text": "To collect and analyze the physical evidence and reconstruct the actions that took place during the incident",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q33-opt4",
+          "text": "Reviewing the digital investigation process for potential enhancements.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The goal of the Physical Crime Investigation phase in IDIP is to collect and analyze the physical evidence and reconstruct the actions that took place during the incident.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "physical investigation",
+        "crime scene analysis"
+      ]
+    },
+    {
+      "id": "eti-ch3-q34",
+      "text": "Which of the following activities occurs during the 'Documentation phase' of the Physical Crime Investigation within the IDIP model?",
+      "options": [
+        {
+          "id": "eti-ch3-q34-opt1",
+          "text": "Performing an in-depth search for physical evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q34-opt2",
+          "text": "Preserving the crime scene to prevent evidence contamination.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q34-opt3",
+          "text": "Taking photographs, sketches, and videos of the crime scene and the physical evidence",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q34-opt4",
+          "text": "Developing a theory for the incident based on initial findings.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Documentation phase within the Physical Crime Investigation of IDIP involves taking photographs, sketches, and videos of the crime scene and the physical evidence. The goal is to capture as much information as possible so that the layout and important details of the crime scene are preserved and recorded.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "physical investigation",
+        "documentation"
+      ]
+    },
+    {
+      "id": "eti-ch3-q35",
+      "text": "What is the main objective of the 'Digital Crime Investigation phase' in the Integrated Digital Investigation Process (IDIP)?",
+      "options": [
+        {
+          "id": "eti-ch3-q35-opt1",
+          "text": "To secure the physical crime scene and prevent unauthorized access.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q35-opt2",
+          "text": "To document all physical evidence before commencing digital analysis.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q35-opt3",
+          "text": "To collect and analyze the digital evidence obtained from the physical investigation",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q35-opt4",
+          "text": "To present the physical findings to a court or corporate management.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The goal of the Digital Crime Investigation phase in IDIP is to collect and analyze the digital evidence that was obtained from the physical investigation phase and through any other future means.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "digital investigation",
+        "evidence analysis"
+      ]
+    },
+    {
+      "id": "eti-ch3-q36",
+      "text": "In the 'Survey phase' of the Digital Crime Investigation within the IDIP model, what primary action is undertaken?",
+      "options": [
+        {
+          "id": "eti-ch3-q36-opt1",
+          "text": "Conducting an in-depth analysis of digital media for hidden files.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q36-opt2",
+          "text": "Properly documenting the digital evidence as it is discovered.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q36-opt3",
+          "text": "Transferring relevant data to a controlled location",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q36-opt4",
+          "text": "Developing investigative hypotheses based on digital findings.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "In the 'Survey phase' of the Digital Crime Investigation within IDIP, the investigator transfers the relevant data from a venue out of physical or administrative control of the investigator to a controlled location.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "digital investigation",
+        "survey phase"
+      ]
+    },
+    {
+      "id": "eti-ch3-q37",
+      "text": "What is the focus of the 'Search and collection phase' within the Digital Crime Investigation of the IDIP model?",
+      "options": [
+        {
+          "id": "eti-ch3-q37-opt1",
+          "text": "Preserving the digital crime scene.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q37-opt2",
+          "text": "Documenting the digital evidence found.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q37-opt3",
+          "text": "An in-depth analysis of the digital evidence, often using software tools",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q37-opt4",
+          "text": "Presenting the digital evidence to the physical investigative team.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The 'Search and collection phase' within the Digital Crime Investigation of IDIP involves an in-depth analysis of the digital evidence. Software tools are used to reveal hidden, deleted, swapped and corrupted files including dates, duration, log files etc. Low-level time lining is performed to trace a user’s activities and identity.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "digital investigation",
+        "search and collection"
+      ]
+    },
+    {
+      "id": "eti-ch3-q38",
+      "text": "Which phase of the Integrated Digital Investigation Process (IDIP) involves putting together the pieces of a digital puzzle and developing investigative hypotheses?",
+      "options": [
+        {
+          "id": "eti-ch3-q38-opt1",
+          "text": "Preservation phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q38-opt2",
+          "text": "Documentation phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q38-opt3",
+          "text": "Reconstruction phase",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q38-opt4",
+          "text": "Presentation phase",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The 'Reconstruction phase' within the Digital Crime Investigation of IDIP includes putting the pieces of a digital puzzle together, and developing investigative hypotheses.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "digital investigation",
+        "reconstruction"
+      ]
+    },
+    {
+      "id": "eti-ch3-q39",
+      "text": "What is the primary purpose of the 'Review phase' in the Integrated Digital Investigation Process (IDIP)?",
+      "options": [
+        {
+          "id": "eti-ch3-q39-opt1",
+          "text": "To present the physical and digital evidence in court.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q39-opt2",
+          "text": "To collect additional evidence that may have been missed earlier.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q39-opt3",
+          "text": "To review the whole investigation and identify areas of improvement",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q39-opt4",
+          "text": "To ensure the digital evidence is properly preserved for future use.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The 'Review phase' in IDIP entails a review of the whole investigation and identifies areas of improvement.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "review phase",
+        "quality improvement"
+      ]
+    },
+    {
+      "id": "eti-ch3-q40",
+      "text": "Which digital forensic model is designed to ensure investigation operation from the very beginning to the end?",
+      "options": [
+        {
+          "id": "eti-ch3-q40-opt1",
+          "text": "Abstract Digital Forensic Model (ADFM)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q40-opt2",
+          "text": "Integrated Digital Investigation Process (IDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q40-opt3",
+          "text": "Extended Model of Cybercrime Investigation (EMCI)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q40-opt4",
+          "text": "End to End Digital Investigation Process (EEDIP)",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "The End to End Digital Investigation Process (EEDIP) ensures investigation operation from beginning to end.",
+      "tags": [
+        "digital forensic models",
+        "EEDIP",
+        "comprehensive process",
+        "end-to-end"
+      ]
+    },
+    {
+      "id": "eti-ch3-q41",
+      "text": "In the End to End Digital Investigation Process (EEDIP), what action takes place during the 'Preservation phase'?",
+      "options": [
+        {
+          "id": "eti-ch3-q41-opt1",
+          "text": "Documentation of the physical scene.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q41-opt2",
+          "text": "Identification of the nature of the incident.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q41-opt3",
+          "text": "Condensing the investigation and findings to date",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q41-opt4",
+          "text": "Summarizing the evidences found.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The preservation phase in EEDIP includes condensing the investigation and finding till date.",
+      "tags": [
+        "digital forensic models",
+        "EEDIP",
+        "preservation",
+        "investigation scope"
+      ]
+    },
+    {
+      "id": "eti-ch3-q42",
+      "text": "What is the main activity in the 'Examination phase' of the End to End Digital Investigation Process (EEDIP)?",
+      "options": [
+        {
+          "id": "eti-ch3-q42-opt1",
+          "text": "Identifying potential indicators of an incident.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q42-opt2",
+          "text": "Replicating digital evidence using standard procedures.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q42-opt3",
+          "text": "Obtaining and studying the digital evidence using extraction methods",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q42-opt4",
+          "text": "Exploring the vitality of documented evidence.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Examination phase in EEDIP involves obtaining and studying the digital evidence. Method of extraction is used for reconstructing data from the media.",
+      "tags": [
+        "digital forensic models",
+        "EEDIP",
+        "examination",
+        "data extraction"
+      ]
+    },
+    {
+      "id": "eti-ch3-q43",
+      "text": "During the 'Analysis phase' of the End to End Digital Investigation Process (EEDIP), what is the primary goal?",
+      "options": [
+        {
+          "id": "eti-ch3-q43-opt1",
+          "text": "To document the physical crime scene.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q43-opt2",
+          "text": "To prepare a summary of the findings for presentation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q43-opt3",
+          "text": "To explore the vitality of documented evidence and draw conclusions",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q43-opt4",
+          "text": "To identify the initial indicators of a security incident.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "In the analysis phase of EEDIP, the vitality of the documented evidence is explored and conclusions are drawn by integrating chunks of data.",
+      "tags": [
+        "digital forensic models",
+        "EEDIP",
+        "analysis",
+        "drawing conclusions"
+      ]
+    },
+    {
+      "id": "eti-ch3-q44",
+      "text": "What is the final step in the End to End Digital Investigation Process (EEDIP)?",
+      "options": [
+        {
+          "id": "eti-ch3-q44-opt1",
+          "text": "Evidence collection",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q44-opt2",
+          "text": "Data examination",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q44-opt3",
+          "text": "Conclusion analysis",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q44-opt4",
+          "text": "Presentation",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "The presentation phase involves summarizing the evidences found in the process of investigation.",
+      "tags": [
+        "digital forensic models",
+        "EEDIP",
+        "presentation",
+        "report generation"
+      ]
+    },
+    {
+      "id": "eti-ch3-q45",
+      "text": "Which digital forensic model is described as potentially the most comprehensive and follows a waterfall model?",
+      "options": [
+        {
+          "id": "eti-ch3-q45-opt1",
+          "text": "Integrated Digital Investigation Process (IDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q45-opt2",
+          "text": "End to End Digital Investigation Process (EEDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q45-opt3",
+          "text": "Extended Model of Cybercrime Investigation (EMCI)",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q45-opt4",
+          "text": "UML modeling of digital forensic process model (UMDFPM)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The DFPM proposed by S. O. Ciardhuain - an Extended Model of Cybercrime Investigation (EMCI) - is more likely the most comprehensive till date. The EMCI follows a waterfall model as every activity occurs in sequence.",
+      "tags": [
+        "digital forensic models",
+        "EMCI",
+        "S. O. Ciardhuain",
+        "waterfall model"
+      ]
+    },
+    {
+      "id": "eti-ch3-q46",
+      "text": "What initiates the 'Awareness' phase in the Extended Model of Cybercrime Investigation (EMCI)?",
+      "options": [
+        {
+          "id": "eti-ch3-q46-opt1",
+          "text": "The completion of the authorization process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q46-opt2",
+          "text": "The formulation of the investigation plan.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q46-opt3",
+          "text": "Being informed that a crime has taken place or an intrusion detection system trigger",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q46-opt4",
+          "text": "The commencement of the evidence search.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Awareness is the phase during which the investigator are informed that a crime has taken place; the crime is reported to some authority. An intrusion detection system may also trigger such awareness.",
+      "tags": [
+        "digital forensic models",
+        "EMCI",
+        "awareness",
+        "incident detection"
+      ]
+    },
+    {
+      "id": "eti-ch3-q47",
+      "text": "What occurs during the 'Authorization' phase of the Extended Model of Cybercrime Investigation (EMCI)?",
+      "options": [
+        {
+          "id": "eti-ch3-q47-opt1",
+          "text": "The initial reporting of a potential crime.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q47-opt2",
+          "text": "The development of the investigation strategy and resource allocation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q47-opt3",
+          "text": "Identifying the nature of the investigation and obtaining necessary approvals",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q47-opt4",
+          "text": "The systematic search and collection of digital evidence.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Authorization is the stage where the nature of investigation has been identified and the unplanned authorization may be required to proceed and the authorization is obtained internally or externally.",
+      "tags": [
+        "digital forensic models",
+        "EMCI",
+        "authorization",
+        "legal approval"
+      ]
+    },
+    {
+      "id": "eti-ch3-q48",
+      "text": "Which factors primarily influence the 'Planning' phase of the Extended Model of Cybercrime Investigation (EMCI)?",
+      "options": [
+        {
+          "id": "eti-ch3-q48-opt1",
+          "text": "Only the legal requirements external to the organisation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q48-opt2",
+          "text": "Primarily the former investigative knowledge of the investigators.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q48-opt3",
+          "text": "Information from within and outside the organisation, including policies and legal requirements",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q48-opt4",
+          "text": "Solely the technical capabilities of the available forensic tools.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Planning is impacted by information from which and outside the organization that will affect the investigation. Internal factors are the organization policies, procedures, and former investigative knowledge while outside factors consist of legal and other requirements not known by the investigators.",
+      "tags": [
+        "digital forensic models",
+        "EMCI",
+        "planning",
+        "internal factors",
+        "external factors"
+      ]
+    },
+    {
+      "id": "eti-ch3-q49",
+      "text": "The Extended Model of Cybercrime Investigation (EMCI) involves a repeated sequence of which actions as the evidence grows?",
+      "options": [
+        {
+          "id": "eti-ch3-q49-opt1",
+          "text": "Awareness, Authorization, Planning",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q49-opt2",
+          "text": "Search, Collect, Examine",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q49-opt3",
+          "text": "Examine, Hypothesis, Present, Prove/Defend",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q49-opt4",
+          "text": "Identification, Preservation, Collection, Analysis",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The sequence of examine, hypothesis, present, and prove/defend are bound to be repeated as the evidence heap increases during the investigation in the EMCI model.",
+      "tags": [
+        "digital forensic models",
+        "EMCI",
+        "iterative process",
+        "evidence growth"
+      ]
+    },
+    {
+      "id": "eti-ch3-q50",
+      "text": "Which digital forensic model is described as an apt paradigm for modelling forensic processes using UML?",
+      "options": [
+        {
+          "id": "eti-ch3-q50-opt1",
+          "text": "Abstract Digital Forensic Model (ADFM)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q50-opt2",
+          "text": "Integrated Digital Investigation Process (IDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q50-opt3",
+          "text": "End to End Digital Investigation Process (EEDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q50-opt4",
+          "text": "UML modeling of digital forensic process model (UMDFPM)",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Kohn, Eloff, and Oliver proposed the UML Modeling of Digital Forensic Process Model, an apt paradigm for modeling forensic processes.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "UML",
+        "modeling"
+      ]
+    },
+    {
+      "id": "eti-ch3-q51",
+      "text": "According to the UML modeling of digital forensic process model (UMDFPM), what event typically triggers the entire digital forensic process?",
+      "options": [
+        {
+          "id": "eti-ch3-q51-opt1",
+          "text": "Preparation phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q51-opt2",
+          "text": "Collection of evidence",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q51-opt3",
+          "text": "Criminal activity",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q51-opt4",
+          "text": "Analysis of evidence",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The whole process in UMDFPM is triggered by criminal activity, which constitutes the starting point.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "process initiation",
+        "trigger event"
+      ]
+    },
+    {
+      "id": "eti-ch3-q52",
+      "text": "In the UML modeling of digital forensic process model (UMDFPM), which process is introduced between the examination and collection phases?",
+      "options": [
+        {
+          "id": "eti-ch3-q52-opt1",
+          "text": "Preservation",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q52-opt2",
+          "text": "Analysis",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q52-opt3",
+          "text": "Authentication",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q52-opt4",
+          "text": "Reporting",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Authentication is introduced between the examination and collection phase in UMDFPM to make sure that the data integrity of the data before the examination is started is preserved.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "authentication",
+        "data integrity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q53",
+      "text": "Why is the 'Authentication' step considered important in the UMDFPM model?",
+      "options": [
+        {
+          "id": "eti-ch3-q53-opt1",
+          "text": "To allow for modifications to the data during examination.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q53-opt2",
+          "text": "To speed up the evidence collection process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q53-opt3",
+          "text": "To ensure the data integrity before examination begins",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q53-opt4",
+          "text": "To limit access to the evidence for only authorized personnel.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Authentication is introduced between examination and collection phase to make sure that the data integrity of the data before the examination is started is preserved.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "authentication",
+        "data integrity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q54",
+      "text": "What potential impact can the 'Examination' phase have on digital data, as highlighted in the UMDFPM description?",
+      "options": [
+        {
+          "id": "eti-ch3-q54-opt1",
+          "text": "It always guarantees the complete recovery of deleted files.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q54-opt2",
+          "text": "It can alter the contents of data, such as in compressed or hidden files",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q54-opt3",
+          "text": "It never involves any changes to the original or copied data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q54-opt4",
+          "text": "It solely focuses on verifying the authenticity of the storage media.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Examination can alter the contents of data such as in the case of compressed files, hidden files and other forms of data incomprehension.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "examination",
+        "data alteration"
+      ]
+    },
+    {
+      "id": "eti-ch3-q55",
+      "text": "According to the UMDFPM, what is compiled as part of the report procedure after reaching a decision point in the analysis?",
+      "options": [
+        {
+          "id": "eti-ch3-q55-opt1",
+          "text": "A list of collected evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q55-opt2",
+          "text": "A detailed timeline of events.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q55-opt3",
+          "text": "An evidence report",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q55-opt4",
+          "text": "A summary of investigator activities.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "After reaching this decision points (whether to analyze more data or extract more), an evidence report is compiled as part of the report procedure.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "evidence report",
+        "reporting"
+      ]
+    },
+    {
+      "id": "eti-ch3-q56",
+      "text": "In the context of digital forensics, ethics is defined as a set of:",
+      "options": [
+        {
+          "id": "eti-ch3-q56-opt1",
+          "text": "Legal statutes governing computer use.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q56-opt2",
+          "text": "Technical protocols for data recovery.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q56-opt3",
+          "text": "Moral principles that regulate the use of computers",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q56-opt4",
+          "text": "Standard operating procedures for investigations.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Ethics in digital forensic field can be defined as set of moral principles that regulate the use of computers.",
+      "tags": [
+        "ethical issues",
+        "ethics definition",
+        "moral principles",
+        "computer use"
+      ]
+    },
+    {
+      "id": "eti-ch3-q57",
+      "text": "Which of the following is considered a component of ethical decision making in digital forensic work?",
+      "options": [
+        {
+          "id": "eti-ch3-q57-opt1",
+          "text": "Selective presentation of evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q57-opt2",
+          "text": "Dishonesty towards the investigation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q57-opt3",
+          "text": "Prudence, meaning carefully handling digital evidences",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q57-opt4",
+          "text": "Ignoring professional norms if they impede the investigation.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Ethical decision making in digital forensic work comprises of one or more of the following: Prudence means carefully handling the digital evidences.",
+      "tags": [
+        "ethical issues",
+        "ethical decision making",
+        "prudence",
+        "evidence handling"
+      ]
+    },
+    {
+      "id": "eti-ch3-q58",
+      "text": "According to the general ethical norms for investigators, what principle should they uphold?",
+      "options": [
+        {
+          "id": "eti-ch3-q58-opt1",
+          "text": "To prioritise personal gain over societal benefit.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q58-opt2",
+          "text": "To actively cause harm to individuals under investigation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q58-opt3",
+          "text": "To be honest and trustworthy",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q58-opt4",
+          "text": "To discriminate based on personal beliefs.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to general ethical norms for investigators, they should aim to be honest and trustworthy.",
+      "tags": [
+        "ethical issues",
+        "ethical norms",
+        "honesty",
+        "trustworthiness"
+      ]
+    },
+    {
+      "id": "eti-ch3-q59",
+      "text": "What action should an investigator take regarding property rights, including copyrights and patents, according to ethical norms?",
+      "options": [
+        {
+          "id": "eti-ch3-q59-opt1",
+          "text": "Disregard them if they hinder the investigation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q59-opt2",
+          "text": "Exploit them for personal benefit if discovered during an investigation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q59-opt3",
+          "text": "Honor property rights",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q59-opt4",
+          "text": "Publicly disclose them regardless of confidentiality.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to general ethical norms for investigators, they should honor property rights, including copyrights and patents.",
+      "tags": [
+        "ethical issues",
+        "ethical norms",
+        "property rights",
+        "intellectual property"
+      ]
+    },
+    {
+      "id": "eti-ch3-q60",
+      "text": "Which ethical principle dictates that investigators should not inappropriately reveal private information obtained during an investigation?",
+      "options": [
+        {
+          "id": "eti-ch3-q60-opt1",
+          "text": "Fairness",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q60-opt2",
+          "text": "Honesty",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q60-opt3",
+          "text": "Respect the privacy of others",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q60-opt4",
+          "text": "Compliance with the law",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to general ethical norms for investigators, they should respect the privacy of others.",
+      "tags": [
+        "ethical issues",
+        "ethical norms",
+        "privacy",
+        "confidentiality"
+      ]
+    },
+    {
+      "id": "eti-ch3-q61",
+      "text": "What does the ethical norm of 'honoring confidentiality' entail for a digital forensic investigator?",
+      "options": [
+        {
+          "id": "eti-ch3-q61-opt1",
+          "text": "Sharing all case details with the public to ensure transparency.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q61-opt2",
+          "text": "Disclosing sensitive information to unauthorized parties.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q61-opt3",
+          "text": "Maintaining the secrecy of sensitive information",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q61-opt4",
+          "text": "Using confidential information for personal gain if possible.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to general ethical norms for investigators, they should honor confidentiality.",
+      "tags": [
+        "ethical issues",
+        "ethical norms",
+        "confidentiality",
+        "information security"
+      ]
+    },
+    {
+      "id": "eti-ch3-q62",
+      "text": "Which of the following actions is considered an unethical norm for digital forensic investigators?",
+      "options": [
+        {
+          "id": "eti-ch3-q62-opt1",
+          "text": "Diligently documenting all findings.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q62-opt2",
+          "text": "Maintaining an impartial stance throughout the investigation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q62-opt3",
+          "text": "Upholding relevant evidence",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q62-opt4",
+          "text": "Protecting the chain of custody of digital evidence.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not uphold any relevant evidence. The term \"uphold\" here likely means to withhold or conceal.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "evidence handling",
+        "integrity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q63",
+      "text": "Expressing a personal opinion on the guilt or innocence of a party involved in a digital forensic investigation is considered:",
+      "options": [
+        {
+          "id": "eti-ch3-q63-opt1",
+          "text": "A standard practice to guide the investigation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q63-opt2",
+          "text": "Ethically sound if based on strong technical evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q63-opt3",
+          "text": "An unethical norm for investigation",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q63-opt4",
+          "text": "Acceptable if done privately and not in the official report.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not express an opinion on the guilt or innocence belonging to any party.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "impartiality",
+        "investigator conduct"
+      ]
+    },
+    {
+      "id": "eti-ch3-q64",
+      "text": "Engaging in any kind of unethical or illegal conduct during a digital forensic investigation is:",
+      "options": [
+        {
+          "id": "eti-ch3-q64-opt1",
+          "text": "Permissible if it helps to uncover crucial evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q64-opt2",
+          "text": "A matter of personal discretion depending on the case.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q64-opt3",
+          "text": "An unethical norm for investigation",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q64-opt4",
+          "text": "Acceptable as long as it is not explicitly against company policy.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not engage or involve in any kind of unethical or illegal conduct.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "professional conduct",
+        "legality"
+      ]
+    },
+    {
+      "id": "eti-ch3-q65",
+      "text": "What is considered unethical for a digital forensic investigator regarding their capabilities for an assignment?",
+      "options": [
+        {
+          "id": "eti-ch3-q65-opt1",
+          "text": "Seeking assistance from more experienced colleagues.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q65-opt2",
+          "text": "Continuously updating their knowledge and skills.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q65-opt3",
+          "text": "Deliberately undertaking an assignment beyond their capability",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q65-opt4",
+          "text": "Clearly defining the scope of their expertise.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not deliberately or knowingly undertake an assignment beyond him or her capability.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "competence",
+        "professional boundaries"
+      ]
+    },
+    {
+      "id": "eti-ch3-q66",
+      "text": "Misrepresenting one's education, training, or credentials in the field of digital forensics is considered:",
+      "options": [
+        {
+          "id": "eti-ch3-q66-opt1",
+          "text": "Acceptable if it leads to securing an important investigation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q66-opt2",
+          "text": "A minor infraction if the investigator possesses practical experience.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q66-opt3",
+          "text": "An unethical norm",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q66-opt4",
+          "text": "A common practice in competitive professional environments.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not distort or falsify education, training, credentials.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "professional integrity",
+        "misrepresentation"
+      ]
+    },
+    {
+      "id": "eti-ch3-q67",
+      "text": "Showing bias or prejudice in findings or observations during a digital forensic investigation is considered:",
+      "options": [
+        {
+          "id": "eti-ch3-q67-opt1",
+          "text": "A natural human tendency that can be accounted for in the analysis.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q67-opt2",
+          "text": "Acceptable if the investigator has strong personal convictions.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q67-opt3",
+          "text": "An unethical norm",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q67-opt4",
+          "text": "Sometimes necessary to uncover the truth more effectively.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not display bias or prejudice in findings or observation.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "impartiality",
+        "objectivity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q68",
+      "text": "What ethical boundary should a digital forensic investigator be mindful of regarding their authorized actions?",
+      "options": [
+        {
+          "id": "eti-ch3-q68-opt1",
+          "text": "They should always strive to go above and beyond their initial authorization.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q68-opt2",
+          "text": "They should only operate within the scope of their authorization",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q68-opt3",
+          "text": "Exceeding authorization is acceptable if it leads to more comprehensive results.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q68-opt4",
+          "text": "The initial authorization is merely a guideline and can be expanded as needed.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not exceed or outpace authorization in conducting examination.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "authorization",
+        "scope of investigation"
+      ]
+    },
+    {
+      "id": "eti-ch3-q69",
+      "text": "Which of the following options is NOT a stage in the Road map for Digital Forensic Research (RMDFR) as described in the text?",
+      "options": [
+        {
+          "id": "eti-ch3-q69-opt1",
+          "text": "Identification",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q69-opt2",
+          "text": "Collection",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q69-opt3",
+          "text": "Authentication",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q69-opt4",
+          "text": "Analysis",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The six phases of RMDFR are Identification, Preservation, Collection, Examination, Analysis, and Presentation (Reporting). Authentication is not listed as a separate phase in this model.",
+      "tags": [
+        "digital forensic models",
+        "RMDFR",
+        "phases",
+        "not a phase"
+      ]
+    },
+    {
+      "id": "eti-ch3-q70",
+      "text": "Which of the following models includes a phase focused on preparing tools and obtaining legal permissions?",
+      "options": [
+        {
+          "id": "eti-ch3-q70-opt1",
+          "text": "RMDFR (Road map for Digital Forensic Research)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q70-opt2",
+          "text": "EEDIP (End to End Digital Investigation Process)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q70-opt3",
+          "text": "ADFM (Abstract Digital Forensic Model)",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q70-opt4",
+          "text": "IDIP (Integrated Digital Investigation Process)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Abstract Digital Forensic Model (ADFM) includes a Preparation phase involving tools, techniques, search warrants, and authorizations.",
+      "tags": [
+        "digital forensic models",
+        "ADFM",
+        "preparation phase",
+        "legal permissions"
+      ]
+    },
+    {
+      "id": "eti-ch3-q71",
+      "text": "Which model explicitly mentions 'Returning Evidence' as one of its phases?",
+      "options": [
+        {
+          "id": "eti-ch3-q71-opt1",
+          "text": "RMDFR (Road map for Digital Forensic Research)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q71-opt2",
+          "text": "IDIP (Integrated Digital Investigation Process)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q71-opt3",
+          "text": "EEDIP (End to End Digital Investigation Process)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q71-opt4",
+          "text": "ADFM (Abstract Digital Forensic Model)",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "The Abstract Digital Forensic Model (ADFM) has a phase called 'Returning Evidence' where physical and digital property is returned to the proper owner.",
+      "tags": [
+        "digital forensic models",
+        "ADFM",
+        "returning evidence",
+        "post-investigation phase"
+      ]
+    },
+    {
+      "id": "eti-ch3-q72",
+      "text": "Which model is specifically designed to address issues of data protection, acquisition, imaging, extraction, interrogation, ingestion/normalization, analysis, and reporting, particularly in the context of cyber terrorism?",
+      "options": [
+        {
+          "id": "eti-ch3-q72-opt1",
+          "text": "Abstract Digital Forensic Model (ADFM)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q72-opt2",
+          "text": "End to End Digital Investigation Process (EEDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q72-opt3",
+          "text": "Road map for Digital Forensic Research (RMDFR)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q72-opt4",
+          "text": "Integrated Digital Investigation Process (IDIP)",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "The IDIP model does well at illustrating the forensic process, and also conforms to the cyber terrorism capabilities which require a digital investigation to address issues of data protection, data acquisition, imaging, extraction, interrogation, ingestion/normalization, analysis and reporting.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "cyber terrorism",
+        "comprehensive capabilities"
+      ]
+    },
+    {
+      "id": "eti-ch3-q73",
+      "text": "Which model emphasizes the reconstruction of events that led to the incident and includes a review phase for continuous improvement?",
+      "options": [
+        {
+          "id": "eti-ch3-q73-opt1",
+          "text": "Abstract Digital Forensic Model (ADFM)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q73-opt2",
+          "text": "End to End Digital Investigation Process (EEDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q73-opt3",
+          "text": "Integrated Digital Investigation Process (IDIP)",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q73-opt4",
+          "text": "Extended Model of Cybercrime Investigation (EMCI)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The IDIP model highlights the reconstruction of the events that led to the incident and emphasizes reviewing the whole task, hence ultimately building a mechanism for quicker forensic examinations.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "reconstruction",
+        "review phase"
+      ]
+    },
+    {
+      "id": "eti-ch3-q74",
+      "text": "Which model explicitly mentions 'condensing the investigation and finding till date' as part of its preservation phase?",
+      "options": [
+        {
+          "id": "eti-ch3-q74-opt1",
+          "text": "Road map for Digital Forensic Research (RMDFR)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q74-opt2",
+          "text": "Integrated Digital Investigation Process (IDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q74-opt3",
+          "text": "End to End Digital Investigation Process (EEDIP)",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q74-opt4",
+          "text": "Abstract Digital Forensic Model (ADFM)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The preservation phase in the End to End Digital Investigation Process (EEDIP) includes condensing the investigation and finding till date.",
+      "tags": [
+        "digital forensic models",
+        "EEDIP",
+        "preservation phase",
+        "investigation scope"
+      ]
+    },
+    {
+      "id": "eti-ch3-q75",
+      "text": "In which model does every activity occur in a strict sequence, following a waterfall approach?",
+      "options": [
+        {
+          "id": "eti-ch3-q75-opt1",
+          "text": "Integrated Digital Investigation Process (IDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q75-opt2",
+          "text": "End to End Digital Investigation Process (EEDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q75-opt3",
+          "text": "Road map for Digital Forensic Research (RMDFR)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q75-opt4",
+          "text": "Extended Model of Cybercrime Investigation (EMCI)",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "The Extended Model of Cybercrime Investigation (EMCI) follows a waterfall model as every activity occurs in sequence.",
+      "tags": [
+        "digital forensic models",
+        "EMCI",
+        "waterfall model",
+        "sequential process"
+      ]
+    },
+    {
+      "id": "eti-ch3-q76",
+      "text": "Which model uses UML and case diagrams to illustrate all phases and their interaction with investigators?",
+      "options": [
+        {
+          "id": "eti-ch3-q76-opt1",
+          "text": "Extended Model of Cybercrime Investigation (EMCI)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q76-opt2",
+          "text": "End to End Digital Investigation Process (EEDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q76-opt3",
+          "text": "Integrated Digital Investigation Process (IDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q76-opt4",
+          "text": "UML modeling of digital forensic process model (UMDFPM)",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Kohn and Oliver made use of UML and case diagram to demonstrate all the phases and its interaction with all investigators in the UML Modeling of Digital Forensic Process Model (UMDFPM).",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "UML",
+        "case diagrams"
+      ]
+    },
+    {
+      "id": "eti-ch3-q77",
+      "text": "In the UMDFPM, the 'Prepare' process is associated with which phase?",
+      "options": [
+        {
+          "id": "eti-ch3-q77-opt1",
+          "text": "Collection phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q77-opt2",
+          "text": "Analysis phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q77-opt3",
+          "text": "Preparation phase",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q77-opt4",
+          "text": "Presentation phase",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "In the UMDFPM, two processes have been added to the activity diagram: “prepare” in the preparation phase and “present” in presentation phase.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "prepare process",
+        "preparation phase"
+      ]
+    },
+    {
+      "id": "eti-ch3-q78",
+      "text": "According to the UMDFPM, the 'Present' process is included in which phase?",
+      "options": [
+        {
+          "id": "eti-ch3-q78-opt1",
+          "text": "Analysis phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q78-opt2",
+          "text": "Examination phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q78-opt3",
+          "text": "Collection phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q78-opt4",
+          "text": "Presentation phase",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "In the UMDFPM, two processes have been added to the activity diagram: “prepare” in the preparation phase and “present” in presentation phase.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "present process",
+        "presentation phase"
+      ]
+    },
+    {
+      "id": "eti-ch3-q79",
+      "text": "In the UMDFPM, what is the primary focus of the 'Authentication' process introduced between collection and examination?",
+      "options": [
+        {
+          "id": "eti-ch3-q79-opt1",
+          "text": "To verify the identity of the individuals who accessed the evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q79-opt2",
+          "text": "To ensure the collected data is free from viruses and malware.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q79-opt3",
+          "text": "To preserve the data integrity of the data before examination",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q79-opt4",
+          "text": "To document the chain of custody of the collected evidence.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Authentication is introduced between examination and collection phase in UMDFPM to make sure that the data integrity of the data before the examination is started is preserved.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "authentication",
+        "data integrity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q80",
+      "text": "The 'Evidence report' in the UMDFPM is primarily an output of which stage?",
+      "options": [
+        {
+          "id": "eti-ch3-q80-opt1",
+          "text": "Collection phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q80-opt2",
+          "text": "Authentication phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q80-opt3",
+          "text": "Investigation phase",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q80-opt4",
+          "text": "Presentation phase",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The evidence document is the output of the investigation phase in the UMDFPM. The investigation phase encompasses several processes including collect, authenticate, examination, and analyze.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "evidence report",
+        "investigation phase output"
+      ]
+    },
+    {
+      "id": "eti-ch3-q81",
+      "text": "Which of the following is NOT listed as a general ethical norm for a digital forensic investigator in the provided text?",
+      "options": [
+        {
+          "id": "eti-ch3-q81-opt1",
+          "text": "To be fair and take action not to discriminate.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q81-opt2",
+          "text": "To give proper credit to intellectual property.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q81-opt3",
+          "text": "To aggressively pursue convictions to serve justice.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q81-opt4",
+          "text": "To respect the privacy of others.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The general ethical norms listed are: To contribute to society, avoid harm, be honest, be fair and not discriminate, honor property rights, credit intellectual property, respect privacy, and honor confidentiality. Aggressively pursuing convictions is not listed and could conflict with impartiality.",
+      "tags": [
+        "ethical issues",
+        "ethical norms",
+        "not a norm",
+        "investigator conduct"
+      ]
+    },
+    {
+      "id": "eti-ch3-q82",
+      "text": "Which of the following actions by a digital forensic investigator would be considered unethical according to the text?",
+      "options": [
+        {
+          "id": "eti-ch3-q82-opt1",
+          "text": "Utilizing specialised software tools for data recovery.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q82-opt2",
+          "text": "Documenting the steps taken during evidence acquisition.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q82-opt3",
+          "text": "Declaring any confidential matters or knowledge",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q82-opt4",
+          "text": "Maintaining a secure chain of custody for all collected evidence.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not declare any confidential matters or knowledge.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "confidentiality breach",
+        "information disclosure"
+      ]
+    },
+    {
+      "id": "eti-ch3-q83",
+      "text": "A digital forensic investigator who expresses a definitive stance on the guilt of a suspect before all evidence is thoroughly analysed is violating which ethical guideline?",
+      "options": [
+        {
+          "id": "eti-ch3-q83-opt1",
+          "text": "Honoring property rights.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q83-opt2",
+          "text": "Respecting the privacy of others.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q83-opt3",
+          "text": "Not expressing an opinion on guilt or innocence",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q83-opt4",
+          "text": "Avoiding harm to others.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not express an opinion on the guilt or innocence belonging to any party.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "impartiality",
+        "presumption of innocence"
+      ]
+    },
+    {
+      "id": "eti-ch3-q84",
+      "text": "An investigator knowingly accepting a case that requires expertise they do not possess is a breach of which unethical norm?",
+      "options": [
+        {
+          "id": "eti-ch3-q84-opt1",
+          "text": "Falsifying credentials.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q84-opt2",
+          "text": "Displaying bias.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q84-opt3",
+          "text": "Undertaking an assignment beyond capability",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q84-opt4",
+          "text": "Exceeding authorization.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not deliberately or knowingly undertake an assignment beyond him or her capability.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "competence",
+        "professional responsibility"
+      ]
+    },
+    {
+      "id": "eti-ch3-q85",
+      "text": "Intentionally misstating one's qualifications to secure a digital forensics contract violates which ethical principle?",
+      "options": [
+        {
+          "id": "eti-ch3-q85-opt1",
+          "text": "Honoring confidentiality.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q85-opt2",
+          "text": "Respecting property rights.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q85-opt3",
+          "text": "Not falsifying credentials",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q85-opt4",
+          "text": "Avoiding harm to others.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not distort or falsify education, training, credentials.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "professional integrity",
+        "misrepresentation"
+      ]
+    },
+    {
+      "id": "eti-ch3-q86",
+      "text": "If a digital forensic investigator allows their personal beliefs about a suspect to influence their analysis of digital evidence, they are exhibiting:",
+      "options": [
+        {
+          "id": "eti-ch3-q86-opt1",
+          "text": "Due diligence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q86-opt2",
+          "text": "Objectivity.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q86-opt3",
+          "text": "Bias",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q86-opt4",
+          "text": "Thoroughness.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not display bias or prejudice in findings or observation.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "bias",
+        "objectivity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q87",
+      "text": "Conducting forensic examinations beyond the scope explicitly permitted by a search warrant or legal authorization is considered:",
+      "options": [
+        {
+          "id": "eti-ch3-q87-opt1",
+          "text": "Acceptable if additional relevant evidence is likely to be found.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q87-opt2",
+          "text": "A necessary measure to ensure a comprehensive investigation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q87-opt3",
+          "text": "Exceeding authorization and an unethical norm",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q87-opt4",
+          "text": "Permissible with verbal consent from the client.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms for Digital Forensic Investigation, investigators should not exceed or outpace authorization in conducting examination.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "authorization",
+        "legal boundaries"
+      ]
+    },
+    {
+      "id": "eti-ch3-q88",
+      "text": "The primary goal of duplicating original data in digital forensics is to:",
+      "options": [
+        {
+          "id": "eti-ch3-q88-opt1",
+          "text": "Allow for destructive testing on the copy.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q88-opt2",
+          "text": "Increase the processing speed of analysis tools.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q88-opt3",
+          "text": "Modify the data to highlight key findings.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q88-opt4",
+          "text": "Reduce the storage space required for the evidence.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Rule 1 states an examination should never be performed on the original media. Duplicating the data allows for analysis without risking the integrity of the original evidence. Option A reflects this principle.",
+      "tags": [
+        "rules",
+        "data duplication",
+        "original media",
+        "preservation"
+      ]
+    },
+    {
+      "id": "eti-ch3-q89",
+      "text": "Which of the following is the LEAST likely goal of a digital forensic investigation?",
+      "options": [
+        {
+          "id": "eti-ch3-q89-opt1",
+          "text": "To identify the perpetrators of a cybercrime.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q89-opt2",
+          "text": "To understand the sequence of events during a digital incident.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q89-opt3",
+          "text": "To tamper with digital evidence to secure a conviction.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q89-opt4",
+          "text": "To present legally admissible digital evidence in court.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The main objective of computer forensic investigation is to examine digital evidences and to ensure that they have not been tampered with. Tampering with evidence is contrary to the goals and rules of digital forensics.",
+      "tags": [
+        "goals",
+        "investigation objectives",
+        "ethical considerations",
+        "evidence integrity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q90",
+      "text": "The fact that 'each and every case is different' poses a challenge primarily to which aspect of digital forensics?",
+      "options": [
+        {
+          "id": "eti-ch3-q90-opt1",
+          "text": "The legal admissibility of digital evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q90-opt2",
+          "text": "The general ethical norms for investigators.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q90-opt3",
+          "text": "Identifying the appropriate techniques and tools",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q90-opt4",
+          "text": "The necessity of maintaining a chain of custody.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "A major obstacle is that each and every case is different, and identifying the techniques and tools will take a long time.",
+      "tags": [
+        "challenges",
+        "case variability",
+        "tool selection",
+        "investigation process"
+      ]
+    },
+    {
+      "id": "eti-ch3-q91",
+      "text": "The 'freezing the crime scene' analogy best describes which phase of the RMDFR model?",
+      "options": [
+        {
+          "id": "eti-ch3-q91-opt1",
+          "text": "Identification",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q91-opt2",
+          "text": "Collection",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q91-opt3",
+          "text": "Preservation",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q91-opt4",
+          "text": "Examination",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Preservation stage corresponds to \"freezing the crime scene\". It involves preventing any activities that can damage digital information being collected.",
+      "tags": [
+        "digital forensic models",
+        "RMDFR",
+        "preservation",
+        "crime scene management"
+      ]
+    },
+    {
+      "id": "eti-ch3-q92",
+      "text": "The phase in a digital forensic model where the probative value of potential evidence is determined is typically the:",
+      "options": [
+        {
+          "id": "eti-ch3-q92-opt1",
+          "text": "Collection phase.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q92-opt2",
+          "text": "Examination phase.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q92-opt3",
+          "text": "Analysis phase.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q92-opt4",
+          "text": "Preservation phase.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Analysis phase aims to “draw conclusions based on evidence found\". In the ADFM, the Analysis phase \"determines importance and probative value to the case of the examined product\".",
+      "tags": [
+        "digital forensic models",
+        "analysis",
+        "probative value",
+        "evidence assessment"
+      ]
+    },
+    {
+      "id": "eti-ch3-q93",
+      "text": "The concurrent execution of physical and digital investigation is a notable feature of which digital forensic model?",
+      "options": [
+        {
+          "id": "eti-ch3-q93-opt1",
+          "text": "Extended Model of Cybercrime Investigation (EMCI)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q93-opt2",
+          "text": "End to End Digital Investigation Process (EEDIP)",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q93-opt3",
+          "text": "Integrated Digital Investigation Process (IDIP)",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q93-opt4",
+          "text": "Abstract Digital Forensic Model (ADFM)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The IDIP model facilitates concurrent execution of physical and digital investigation.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "concurrent investigation",
+        "physical evidence"
+      ]
+    },
+    {
+      "id": "eti-ch3-q94",
+      "text": "The phase in the EMCI model where the investigation strategy and resource allocation would be defined is the:",
+      "options": [
+        {
+          "id": "eti-ch3-q94-opt1",
+          "text": "Awareness phase.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q94-opt2",
+          "text": "Authorization phase.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q94-opt3",
+          "text": "Planning phase.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q94-opt4",
+          "text": "Search for identify evidence phase.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Planning phase in EMCI is impacted by information from within and outside the organization that will affect the investigation. This would include strategy and resource considerations.",
+      "tags": [
+        "digital forensic models",
+        "EMCI",
+        "planning phase",
+        "strategy"
+      ]
+    },
+    {
+      "id": "eti-ch3-q95",
+      "text": "In the UMDFPM, the process of 'Transport of Evidence' would logically occur:",
+      "options": [
+        {
+          "id": "eti-ch3-q95-opt1",
+          "text": "Before the 'Prepare' process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q95-opt2",
+          "text": "Between the 'Collection of Evidence' and 'Storage of Evidence' processes.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q95-opt3",
+          "text": "After the 'Examination of Evidence' process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q95-opt4",
+          "text": "Following the 'Presentation of Hypothesis' process.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Figure 3.6 (UML modeling of digital forensic process model) shows 'Transport of Evidence' occurring after 'Collection of Evidence' and leading to 'Storage of Evidence'.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "evidence transport",
+        "process flow"
+      ]
+    },
+    {
+      "id": "eti-ch3-q96",
+      "text": "The ethical principle of 'prudence' in digital forensics primarily relates to:",
+      "options": [
+        {
+          "id": "eti-ch3-q96-opt1",
+          "text": "Maintaining open communication with all parties involved.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q96-opt2",
+          "text": "Ensuring that all actions taken are legally defensible.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q96-opt3",
+          "text": "Carefully handling digital evidences",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q96-opt4",
+          "text": "Promptly reporting any potential conflicts of interest.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Prudence in digital forensic work means carefully handling the digital evidences.",
+      "tags": [
+        "ethical issues",
+        "prudence",
+        "evidence handling",
+        "best practices"
+      ]
+    },
+    {
+      "id": "eti-ch3-q97",
+      "text": "An investigator who withholds exculpatory evidence is violating which ethical principle?",
+      "options": [
+        {
+          "id": "eti-ch3-q97-opt1",
+          "text": "Honoring confidentiality.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q97-opt2",
+          "text": "Being honest and trustworthy.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q97-opt3",
+          "text": "Respecting the privacy of others.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q97-opt4",
+          "text": "Giving proper credit to intellectual property.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "According to unethical norms, investigators should not uphold (withhold) any relevant evidence. This violates the broader ethical principle of being honest and trustworthy and acting with integrity towards the investigation.",
+      "tags": [
+        "ethical issues",
+        "withholding evidence",
+        "honesty",
+        "integrity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q98",
+      "text": "The requirement that a copy of digital evidence must be an exact, bit-by-bit copy is crucial for:",
+      "options": [
+        {
+          "id": "eti-ch3-q98-opt1",
+          "text": "Reducing the size of the evidence for easier storage.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q98-opt2",
+          "text": "Ensuring that the analytical tools can process the data efficiently.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q98-opt3",
+          "text": "Maintaining the integrity and admissibility of the evidence in court",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q98-opt4",
+          "text": "Allowing for easy modification and annotation of the evidence.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Rule 3 states the copy of the evidence must be an exact, bit-by-bit copy (bit-stream copy). This ensures that the copy is forensically sound and can be relied upon in legal proceedings.",
+      "tags": [
+        "rules",
+        "bit-stream copy",
+        "evidence integrity",
+        "admissibility"
+      ]
+    },
+    {
+      "id": "eti-ch3-q99",
+      "text": "The primary purpose of the 'chain of custody' is to:",
+      "options": [
+        {
+          "id": "eti-ch3-q99-opt1",
+          "text": "Limit the number of individuals who can access the evidence storage facility.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q99-opt2",
+          "text": "Ensure the evidence is analysed using standardised forensic tools.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q99-opt3",
+          "text": "Document everyone who has handled the evidence and when",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q99-opt4",
+          "text": "Expedite the process of presenting digital evidence in court.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The chain of custody of all evidence must be clearly maintained to provide an audit log of whom might have accessed the evidence and at what time.",
+      "tags": [
+        "rules",
+        "chain of custody",
+        "evidence tracking",
+        "integrity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q100",
+      "text": "The focus on 'low-level time lining to trace a user's activities' occurs during which phase of the IDIP model's Digital Crime Investigation?",
+      "options": [
+        {
+          "id": "eti-ch3-q100-opt1",
+          "text": "Preservation phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q100-opt2",
+          "text": "Documentation phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q100-opt3",
+          "text": "Search and collection phase",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q100-opt4",
+          "text": "Reconstruction phase",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "During the Search and collection phase of the Digital Crime Investigation in IDIP, an in-depth analysis of the digital evidence is performed, including low-level time lining to trace a user’s activities.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "digital investigation",
+        "timeline analysis"
+      ]
+    },
+    {
+      "id": "eti-ch3-q101",
+      "text": "The repetition of the 'examine, hypothesis, present, and prove/defend' sequence in the EMCI model is a characteristic of its:",
+      "options": [
+        {
+          "id": "eti-ch3-q101-opt1",
+          "text": "Strict linear progression.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q101-opt2",
+          "text": "Emphasis on initial awareness and authorization.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q101-opt3",
+          "text": "Iterative approach as evidence evolves",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q101-opt4",
+          "text": "Detailed planning and resource allocation.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The EMCI follows a waterfall model, but the sequence of examine, hypothesis, present, and prove/defend are bound to be repeated as the evidence heap increases during the investigation. This indicates an iterative element within the overall sequential structure.",
+      "tags": [
+        "digital forensic models",
+        "EMCI",
+        "iterative process",
+        "evidence evolution"
+      ]
+    },
+    {
+      "id": "eti-ch3-q102",
+      "text": "The introduction of an 'Authentication' phase in the UMDFPM between collection and examination aims to primarily address concerns related to:",
+      "options": [
+        {
+          "id": "eti-ch3-q102-opt1",
+          "text": "The efficiency of the examination process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q102-opt2",
+          "text": "The legal admissibility of the collection methods.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q102-opt3",
+          "text": "The integrity of the digital evidence",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q102-opt4",
+          "text": "The qualifications and authorization of the examiners.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Authentication is introduced between examination and collection phase to make sure that the data integrity of the data before the examination is started is preserved.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "authentication",
+        "data integrity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q103",
+      "text": "A digital forensic investigator who discovers evidence of a crime outside the scope of their initial authorization should:",
+      "options": [
+        {
+          "id": "eti-ch3-q103-opt1",
+          "text": "Immediately analyse the new evidence thoroughly.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q103-opt2",
+          "text": "Ignore the evidence to remain within the original scope.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q103-opt3",
+          "text": "Document the finding and seek appropriate further authorization",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q103-opt4",
+          "text": "Share the information with unauthorized parties to expedite the investigation.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "While not explicitly stated, the ethical norm against exceeding authorization implies that new discoveries outside the authorized scope should be handled responsibly and legally, which would typically involve seeking further authorization rather than proceeding without it or ignoring it.",
+      "tags": [
+        "ethical issues",
+        "scope of investigation",
+        "authorization",
+        "best practices"
+      ]
+    },
+    {
+      "id": "eti-ch3-q104",
+      "text": "The development of a 'theory for the incident' based on analysed results occurs in the 'Reconstruction phase' of which model?",
+      "options": [
+        {
+          "id": "eti-ch3-q104-opt1",
+          "text": "ADFM",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q104-opt2",
+          "text": "EEDIP",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q104-opt3",
+          "text": "IDIP",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q104-opt4",
+          "text": "RMDFR",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Reconstruction phase within both the Physical Crime Investigation and Digital Crime Investigation of the IDIP involves organizing the results from the analysis done and using them to develop a theory for the incident.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "reconstruction phase",
+        "theory development"
+      ]
+    },
+    {
+      "id": "eti-ch3-q105",
+      "text": "The 'Approach Strategy' phase of the ADFM primarily focuses on:",
+      "options": [
+        {
+          "id": "eti-ch3-q105-opt1",
+          "text": "Technical aspects of data acquisition.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q105-opt2",
+          "text": "Legal considerations and warrant execution.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q105-opt3",
+          "text": "Methodological considerations for evidence collection",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q105-opt4",
+          "text": "The final reporting and presentation of findings.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Approach strategy phase of ADFM involves formulating procedures and approach to use in order to maximize the collection of untainted evidence while minimizing the impact to the victim.",
+      "tags": [
+        "digital forensic models",
+        "ADFM",
+        "approach strategy",
+        "methodology"
+      ]
+    },
+    {
+      "id": "eti-ch3-q106",
+      "text": "The UML Modeling of Digital Forensic Process Model (UMDFPM) is distinctive for its use of:",
+      "options": [
+        {
+          "id": "eti-ch3-q106-opt1",
+          "text": "A strict waterfall methodology.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q106-opt2",
+          "text": "A purely linear sequence of phases.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q106-opt3",
+          "text": "Visual modelling techniques for process representation",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q106-opt4",
+          "text": "An emphasis on real-time incident response.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The UMDFPM utilizes UML and case diagrams (visual modelling techniques) to demonstrate all the phases and their interaction with investigators.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "UML",
+        "visual representation"
+      ]
+    },
+    {
+      "id": "eti-ch3-q107",
+      "text": "The 'Detection and Notification' phase is a sub-phase within which larger phase of the IDIP model?",
+      "options": [
+        {
+          "id": "eti-ch3-q107-opt1",
+          "text": "Readiness phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q107-opt2",
+          "text": "Physical Crime Investigation phase",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q107-opt3",
+          "text": "Deployment phase",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q107-opt4",
+          "text": "Digital Crime Investigation phase",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The Deployment phase of IDIP provides a mechanism for an incident to be detected and confirmed and includes the Detection and Notification phase.",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "deployment phase",
+        "incident detection"
+      ]
+    },
+    {
+      "id": "eti-ch3-q108",
+      "text": "The ethical guideline to 'avoid harm to others' in digital forensics most directly relates to:",
+      "options": [
+        {
+          "id": "eti-ch3-q108-opt1",
+          "text": "Protecting the confidentiality of client information.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q108-opt2",
+          "text": "Ensuring the integrity and preservation of digital evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q108-opt3",
+          "text": "The potential impact of investigative actions on individuals or systems",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q108-opt4",
+          "text": "Accurately reporting findings regardless of potential consequences.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The ethical norm to avoid harm to others pertains to the potential negative consequences that forensic investigations or the misuse of discovered information could have on individuals or society.",
+      "tags": [
+        "ethical issues",
+        "avoid harm",
+        "impact of investigation",
+        "responsible conduct"
+      ]
+    },
+    {
+      "id": "eti-ch3-q109",
+      "text": "The ethical obligation to 'honor property rights' is particularly relevant in digital forensics when dealing with:",
+      "options": [
+        {
+          "id": "eti-ch3-q109-opt1",
+          "text": "Volatile data that may be lost upon system shutdown.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q109-opt2",
+          "text": "Encrypted files requiring decryption techniques.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q109-opt3",
+          "text": "Intellectual property such as software or digital content",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q109-opt4",
+          "text": "Deleted files that require recovery methods.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The ethical norm to honor property rights includes copyrights and patents, which are forms of intellectual property often found in digital environments.",
+      "tags": [
+        "ethical issues",
+        "property rights",
+        "intellectual property",
+        "digital assets"
+      ]
+    },
+    {
+      "id": "eti-ch3-q110",
+      "text": "The ethical principle of 'honoring confidentiality' would be most directly challenged by a digital forensic investigator who:",
+      "options": [
+        {
+          "id": "eti-ch3-q110-opt1",
+          "text": "Uses standard forensic tools to analyse a hard drive.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q110-opt2",
+          "text": "Provides a detailed report of findings to the legal team.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q110-opt3",
+          "text": "Publicly discloses sensitive personal information found during an investigation",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q110-opt4",
+          "text": "Follows a strict chain of custody for all evidence.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Honoring confidentiality means not revealing sensitive information to unauthorized parties. Publicly disclosing personal information found during an investigation would be a direct violation of this principle.",
+      "tags": [
+        "ethical issues",
+        "confidentiality",
+        "information disclosure",
+        "privacy breach"
+      ]
+    },
+    {
+      "id": "eti-ch3-q111",
+      "text": "The unethical norm of 'displaying bias or prejudice' in digital forensic findings is most detrimental to:",
+      "options": [
+        {
+          "id": "eti-ch3-q111-opt1",
+          "text": "The speed of the investigation process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q111-opt2",
+          "text": "The cost-effectiveness of forensic analysis.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q111-opt3",
+          "text": "The objectivity and reliability of the investigation results",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q111-opt4",
+          "text": "The volume of digital evidence that can be examined.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Displaying bias or prejudice directly undermines the objectivity and reliability of the findings, which are crucial for the integrity of the forensic process and its outcomes in legal or other contexts.",
+      "tags": [
+        "ethical issues",
+        "bias",
+        "objectivity",
+        "reliability of findings"
+      ]
+    },
+    {
+      "id": "eti-ch3-q112",
+      "text": "The primary reason for the rule that an examination should never be performed on the original media is to:",
+      "options": [
+        {
+          "id": "eti-ch3-q112-opt1",
+          "text": "Prevent accidental modification or damage to the original evidence",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q112-opt2",
+          "text": "Allow multiple investigators to examine the evidence simultaneously.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q112-opt3",
+          "text": "Reduce the time required for the forensic analysis process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q112-opt4",
+          "text": "Ensure that the evidence can be easily transported and stored.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Rule 1 explicitly states that an examination should never be performed on the original media. This is to protect the integrity of the original evidence from any potential alterations or damage during the examination process.",
+      "tags": [
+        "rules",
+        "original media",
+        "preservation",
+        "data integrity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q113",
+      "text": "The term 'forensically sterile media' in the context of digital forensics refers to:",
+      "options": [
+        {
+          "id": "eti-ch3-q113-opt1",
+          "text": "Storage media that has been encrypted using military-grade algorithms.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q113-opt2",
+          "text": "New or thoroughly wiped storage media free from any prior data",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q113-opt3",
+          "text": "Write-protected storage devices that prevent any data modification.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q113-opt4",
+          "text": "Removable media that is stored in a secure, controlled environment.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Rule 2 states that a copy is made onto forensically sterile media. New media should always be used if available. This ensures that the copy is made onto a clean medium and prior data does not contaminate the forensic image.",
+      "tags": [
+        "rules",
+        "sterile media",
+        "evidence acquisition",
+        "data integrity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q114",
+      "text": "The risk of 'data modification' during the acquisition of digital media is primarily addressed by which rule of digital forensics?",
+      "options": [
+        {
+          "id": "eti-ch3-q114-opt1",
+          "text": "Rule 1 (never examine original media).",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q114-opt2",
+          "text": "Rule 2 (use forensically sterile media).",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q114-opt3",
+          "text": "Rule 4 (protect computer and data during acquisition)",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q114-opt4",
+          "text": "Rule 6 (maintain chain of custody).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Rule 4 states that the computer and the data on it must be protected during the acquisition of the media to ensure that the data is not modified.",
+      "tags": [
+        "rules",
+        "data modification",
+        "evidence acquisition",
+        "protection"
+      ]
+    },
+    {
+      "id": "eti-ch3-q115",
+      "text": "The requirement to conduct an examination in a way that prevents any modification of the evidence is outlined in which rule of digital forensics?",
+      "options": [
+        {
+          "id": "eti-ch3-q115-opt1",
+          "text": "Rule 2 (use forensically sterile media).",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q115-opt2",
+          "text": "Rule 3 (make a bit-by-bit copy).",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q115-opt3",
+          "text": "Rule 5 (prevent any modification of the evidence during examination)",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q115-opt4",
+          "text": "Rule 6 (maintain chain of custody).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Rule 5 explicitly states that the examination must be conducted in such a way as to prevent any modification of the evidence.",
+      "tags": [
+        "rules",
+        "evidence examination",
+        "data integrity",
+        "non-modification"
+      ]
+    },
+    {
+      "id": "eti-ch3-q116",
+      "text": "The 'chain of custody' documentation serves as:",
+      "options": [
+        {
+          "id": "eti-ch3-q116-opt1",
+          "text": "A tool for automatically analysing the digital evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q116-opt2",
+          "text": "A record of the technical specifications of the evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q116-opt3",
+          "text": "An audit log of access to the evidence",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q116-opt4",
+          "text": "A legal document outlining the search warrant parameters.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The chain of the custody of all evidence must be clearly maintained to provide an audit log of whom might have accessed the evidence and at what time.",
+      "tags": [
+        "rules",
+        "chain of custody",
+        "audit log",
+        "access control"
+      ]
+    },
+    {
+      "id": "eti-ch3-q117",
+      "text": "The primary purpose of 'validating' digital information in the context of digital forensics is to:",
+      "options": [
+        {
+          "id": "eti-ch3-q117-opt1",
+          "text": "Encrypt the data to protect it from unauthorized access.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q117-opt2",
+          "text": "Ensure the accuracy and reliability of the information",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q117-opt3",
+          "text": "Present the information in a visually appealing format for court.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q117-opt4",
+          "text": "Reduce the volume of data that needs to be reviewed.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Digital forensics includes the identification, recovery, investigation, validation, and presentation of facts regarding digital evidence. Validation ensures the facts presented are accurate and reliable.",
+      "tags": [
+        "definition",
+        "validation",
+        "data accuracy",
+        "reliability"
+      ]
+    },
+    {
+      "id": "eti-ch3-q118",
+      "text": "Reconstructing past events is a major goal that digital forensics achieves through:",
+      "options": [
+        {
+          "id": "eti-ch3-q118-opt1",
+          "text": "Speculative analysis of potential scenarios.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q118-opt2",
+          "text": "Manipulating digital data to fit a hypothesis.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q118-opt3",
+          "text": "Collecting, identifying, and validating digital information",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q118-opt4",
+          "text": "Relying solely on eyewitness testimonies related to digital devices.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The major goal of digital forensics is to duplicate original data and preserve original evidence and then performing the series of investigation by collecting, identifying and validating digital information for the purpose of restructuring past events.",
+      "tags": [
+        "goals",
+        "reconstructing events",
+        "investigation process",
+        "data analysis"
+      ]
+    },
+    {
+      "id": "eti-ch3-q119",
+      "text": "The admissibility of digital evidence in a court of law largely depends on:",
+      "options": [
+        {
+          "id": "eti-ch3-q119-opt1",
+          "text": "The cost-effectiveness of the investigation process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q119-opt2",
+          "text": "The investigator's personal opinion on the case.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q119-opt3",
+          "text": "The use of scientific procedures and techniques",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q119-opt4",
+          "text": "The volume of digital data collected during the investigation.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Digital forensic investigation (DFI) is a special type of investigation where the scientific procedures and techniques used will allow the result- digital evidence- to be admissible in a court of law.",
+      "tags": [
+        "digital forensic investigation",
+        "admissibility",
+        "court of law",
+        "scientific procedures"
+      ]
+    },
+    {
+      "id": "eti-ch3-q120",
+      "text": "When dealing with a large number of files, a key challenge for digital forensic investigators is to:",
+      "options": [
+        {
+          "id": "eti-ch3-q120-opt1",
+          "text": "Analyse every single file in detail, regardless of relevance.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q120-opt2",
+          "text": "Quickly delete irrelevant files to reduce the data volume.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q120-opt3",
+          "text": "Handle and locate a certain amount of valid data",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q120-opt4",
+          "text": "Assume that all files are potential evidence and should be treated equally.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "To achieve the goal of examining digital evidence without tampering, investigation must be able to handle and locate certain amount of valid data from large amount of files stored in computer system.",
+      "tags": [
+        "goals",
+        "challenges",
+        "data volume",
+        "evidence identification"
+      ]
+    },
+    {
+      "id": "eti-ch3-q121",
+      "text": "In a digital forensic investigation, searching inside a file is considered 'worthless' in which situation?",
+      "options": [
+        {
+          "id": "eti-ch3-q121-opt1",
+          "text": "When the files are stored on a working device.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q121-opt2",
+          "text": "When the files are protected by weak passwords.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q121-opt3",
+          "text": "When the information has been deleted",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q121-opt4",
+          "text": "When the files are encrypted but the key is available.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "It is viable that the information has been deleted, in such situation searching inside the file is worthless. Deleted information may no longer reside within the active file system in a readily searchable format.",
+      "tags": [
+        "challenges",
+        "deleted data",
+        "file system",
+        "data recovery"
+      ]
+    },
+    {
+      "id": "eti-ch3-q122",
+      "text": "To read password-protected data in an unauthorized manner, digital forensic investigators must typically employ:",
+      "options": [
+        {
+          "id": "eti-ch3-q122-opt1",
+          "text": "Standard operating system file management tools.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q122-opt2",
+          "text": "Techniques for password cracking or bypassing",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q122-opt3",
+          "text": "Legal coercion to obtain the passwords from the suspect.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q122-opt4",
+          "text": "Ignoring the protected data and focusing on accessible files.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "If the files are secured by some passwords, investigators must find a way to read the protected data in an unauthorized manner. This implies the use of specialized techniques and tools to overcome password protection.",
+      "tags": [
+        "challenges",
+        "password protection",
+        "data access",
+        "forensic techniques"
+      ]
+    },
+    {
+      "id": "eti-ch3-q123",
+      "text": "When searching for data on a damaged device, investigators typically focus on:",
+      "options": [
+        {
+          "id": "eti-ch3-q123-opt1",
+          "text": "Physically repairing the device before imaging.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q123-opt2",
+          "text": "Directly analysing the damaged storage media.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q123-opt3",
+          "text": "Recovering data from working copies or backups",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q123-opt4",
+          "text": "Requesting the user to attempt to boot the damaged device.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Data may be stored in damaged device but the investigator searches the data in working devices. This suggests that investigators often attempt to recover data or find it on other working devices or backups associated with the damaged one.",
+      "tags": [
+        "challenges",
+        "damaged devices",
+        "data recovery",
+        "alternative sources"
+      ]
+    },
+    {
+      "id": "eti-ch3-q124",
+      "text": "Proving that digital data under examination is unaltered is a 'tedious' process primarily due to the:",
+      "options": [
+        {
+          "id": "eti-ch3-q124-opt1",
+          "text": "Lack of sophisticated tools for digital forensic analysis.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q124-opt2",
+          "text": "Inherent volatility and potential for modification of digital data",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q124-opt3",
+          "text": "Legal presumption that all digital evidence has been tampered with.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q124-opt4",
+          "text": "Investigator's inability to understand complex digital file structures.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The digital data found should be protected from being modified. It is very tedious to prove that data under examination is unaltered. This is because digital data can be easily and undetectably altered.",
+      "tags": [
+        "challenges",
+        "data integrity",
+        "tamper-proofing",
+        "digital nature"
+      ]
+    },
+    {
+      "id": "eti-ch3-q125",
+      "text": "The Road map for Digital Forensic Research (RMDFR) framework was designed by:",
+      "options": [
+        {
+          "id": "eti-ch3-q125-opt1",
+          "text": "Reith, Carr, and Gunsh.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q125-opt2",
+          "text": "Carrier and Safford.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q125-opt3",
+          "text": "G. Palmar",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q125-opt4",
+          "text": "Kohn, Eloff, and Oliver.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Palmar designed a framework with the six indexed processes shown in Figure 3.1, which is referred to as the Road map for digital forensic research (RMDFR).",
+      "tags": [
+        "digital forensic models",
+        "RMDFR",
+        "creator",
+        "G. Palmar"
+      ]
+    },
+    {
+      "id": "eti-ch3-q126",
+      "text": "The Abstract Digital Forensic Model (ADFM) was proposed in 2002 by:",
+      "options": [
+        {
+          "id": "eti-ch3-q126-opt1",
+          "text": "G. Palmar.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q126-opt2",
+          "text": "Carrier and Safford.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q126-opt3",
+          "text": "Reith, Carr, and Gunsh",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q126-opt4",
+          "text": "S. O. Ciardhuain.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Reith, Carr, Gunsh proposed the Abstract Digital Forensic model in 2002.",
+      "tags": [
+        "digital forensic models",
+        "ADFM",
+        "proposers",
+        "Reith Carr Gunsh"
+      ]
+    },
+    {
+      "id": "eti-ch3-q127",
+      "text": "The Integrated Digital Investigation Process (IDIP) was proposed by:",
+      "options": [
+        {
+          "id": "eti-ch3-q127-opt1",
+          "text": "Kohn, Eloff, and Oliver.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q127-opt2",
+          "text": "Stephenson.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q127-opt3",
+          "text": "Carrier and Safford",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q127-opt4",
+          "text": "S. O. Ciardhuain.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "DFPM (Digital Forensic Process Model) along with 5 groups and 17 phases are proposed by Carrier and Safford. DFPM is named the Integrated Digital Investigation Process (IDIP).",
+      "tags": [
+        "digital forensic models",
+        "IDIP",
+        "proposers",
+        "Carrier and Safford"
+      ]
+    },
+    {
+      "id": "eti-ch3-q128",
+      "text": "The End to End Digital Investigation Process (EEDIP) model was proposed by:",
+      "options": [
+        {
+          "id": "eti-ch3-q128-opt1",
+          "text": "G. Palmar.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q128-opt2",
+          "text": "S. O. Ciardhuain.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q128-opt3",
+          "text": "Stephenson",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q128-opt4",
+          "text": "Reith, Carr, and Gunsh.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The End to End Digital Investigation Process (EEDIP) model is proposed by Stephenson.",
+      "tags": [
+        "digital forensic models",
+        "EEDIP",
+        "proposer",
+        "Stephenson"
+      ]
+    },
+    {
+      "id": "eti-ch3-q129",
+      "text": "The Extended Model of Cybercrime Investigation (EMCI) was proposed by:",
+      "options": [
+        {
+          "id": "eti-ch3-q129-opt1",
+          "text": "Kohn and Oliver.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q129-opt2",
+          "text": "Stephenson.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q129-opt3",
+          "text": "G. Palmar.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q129-opt4",
+          "text": "S. O. Ciardhuain",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "The DFPM proposed by S. O. Ciardhuain is the Extended Model of Cybercrime Investigation (EMCI).",
+      "tags": [
+        "digital forensic models",
+        "EMCI",
+        "proposer",
+        "S. O. Ciardhuain"
+      ]
+    },
+    {
+      "id": "eti-ch3-q130",
+      "text": "The UML Modeling of Digital Forensic Process Model (UMDFPM) was proposed by:",
+      "options": [
+        {
+          "id": "eti-ch3-q130-opt1",
+          "text": "Carrier and Safford.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q130-opt2",
+          "text": "Stephenson.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q130-opt3",
+          "text": "Kohn, Eloff, and Oliver",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q130-opt4",
+          "text": "G. Palmar.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Kohn, Eloff, and Oliver proposed the UML Modeling of Digital Forensic Process Model (UMDFPM). Kohn and Oliver are specifically mentioned later.",
+      "tags": [
+        "digital forensic models",
+        "UMDFPM",
+        "proposers",
+        "Kohn Eloff Oliver"
+      ]
+    },
+    {
+      "id": "eti-ch3-q131",
+      "text": "In the context of ethical norms for investigators, 'to avoid harm to others' most directly implies:",
+      "options": [
+        {
+          "id": "eti-ch3-q131-opt1",
+          "text": "Not disclosing confidential information.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q131-opt2",
+          "text": "Ensuring the integrity of digital evidence.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q131-opt3",
+          "text": "Considering the potential negative impacts of their actions",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q131-opt4",
+          "text": "Giving proper attribution to intellectual property.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The ethical norm 'to avoid harm to others' suggests that investigators should be mindful of the potential negative consequences their investigations or findings might have on individuals or society.",
+      "tags": [
+        "ethical issues",
+        "avoid harm",
+        "impact",
+        "responsibility"
+      ]
+    },
+    {
+      "id": "eti-ch3-q132",
+      "text": "The ethical principle of 'to be fair and take action not to discriminate' requires investigators to:",
+      "options": [
+        {
+          "id": "eti-ch3-q132-opt1",
+          "text": "Prioritise certain types of cases over others based on public interest.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q132-opt2",
+          "text": "Treat all individuals and evidence objectively, without prejudice",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q132-opt3",
+          "text": "Favour the prosecution or the defence based on preliminary findings.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q132-opt4",
+          "text": "Apply different standards of analysis based on the suspect's background.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The ethical norm 'to be fair and take action not to discriminate' mandates that investigators should be impartial and avoid any form of bias in their work, treating all parties and evidence equitably.",
+      "tags": [
+        "ethical issues",
+        "fairness",
+        "non-discrimination",
+        "impartiality"
+      ]
+    },
+    {
+      "id": "eti-ch3-q133",
+      "text": "The ethical responsibility to 'give proper credit to intellectual property' is crucial for maintaining:",
+      "options": [
+        {
+          "id": "eti-ch3-q133-opt1",
+          "text": "The speed and efficiency of digital forensic investigations.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q133-opt2",
+          "text": "The security and confidentiality of case-related data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q133-opt3",
+          "text": "Academic integrity and professional respect within the field",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q133-opt4",
+          "text": "The legal admissibility of forensic findings in court.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The ethical norm 'to give proper credit to intellectual property' is fundamental to maintaining academic integrity and fostering respect for the work of others within the professional community.",
+      "tags": [
+        "ethical issues",
+        "intellectual property",
+        "attribution",
+        "professional conduct"
+      ]
+    },
+    {
+      "id": "eti-ch3-q134",
+      "text": "The ethical norm of 'upholding any relevant evidence' is listed as an unethical practice, implying that investigators should NOT:",
+      "options": [
+        {
+          "id": "eti-ch3-q134-opt1",
+          "text": "Disclose all relevant findings truthfully and transparently.",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q134-opt2",
+          "text": "Secure and preserve all potential evidence according to protocol.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q134-opt3",
+          "text": "Acknowledge the importance and relevance of all discovered data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q134-opt4",
+          "text": "Ensure a comprehensive and impartial analysis of all collected items.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "The unethical norm is to 'uphold any relevant evidence', where 'uphold' in this context likely means to conceal or suppress. Therefore, the ethical expectation is to disclose all relevant findings truthfully.",
+      "tags": [
+        "ethical issues",
+        "unethical norms",
+        "evidence disclosure",
+        "transparency"
+      ]
+    },
+    {
+      "id": "eti-ch3-q135",
+      "text": "A digital forensic investigator who shares details of an ongoing investigation with individuals not authorized to receive such information is violating the ethical norm related to:",
+      "options": [
+        {
+          "id": "eti-ch3-q135-opt1",
+          "text": "Honesty towards the investigation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q135-opt2",
+          "text": "Compliance with the law.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q135-opt3",
+          "text": "Honoring confidentiality",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q135-opt4",
+          "text": "Prudence in handling digital evidences.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Declaring confidential matters or knowledge is listed as an unethical norm, which directly violates the general ethical norm of honoring confidentiality.",
+      "tags": [
+        "ethical issues",
+        "confidentiality",
+        "unauthorized disclosure",
+        "information security"
+      ]
+    },
+    {
+      "id": "eti-ch3-q136",
+      "text": "The unethical practice of a digital forensic investigator expressing an opinion on the guilt or innocence of a party can compromise the:",
+      "options": [
+        {
+          "id": "eti-ch3-q136-opt1",
+          "text": "Technical accuracy of the forensic tools used.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q136-opt2",
+          "text": "Efficiency of the evidence collection process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q136-opt3",
+          "text": "Impartiality and objectivity of the investigation",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q136-opt4",
+          "text": "Security of the evidence storage facilities.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Expressing an opinion on guilt or innocence demonstrates a lack of impartiality and can undermine the perceived objectivity of the investigator's findings.",
+      "tags": [
+        "ethical issues",
+        "impartiality",
+        "objectivity",
+        "investigator bias"
+      ]
+    },
+    {
+      "id": "eti-ch3-q137",
+      "text": "Engaging in illegal conduct during a digital forensic investigation not only violates legal statutes but also breaches which ethical principle?",
+      "options": [
+        {
+          "id": "eti-ch3-q137-opt1",
+          "text": "Honoring property rights.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q137-opt2",
+          "text": "Respecting privacy of others.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q137-opt3",
+          "text": "General ethical norms and professional integrity",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q137-opt4",
+          "text": "Giving proper credit to intellectual property.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Engaging in any kind of unethical or illegal conduct is listed as an unethical norm, directly contravening general ethical principles of honesty, trustworthiness, and compliance with the law.",
+      "tags": [
+        "ethical issues",
+        "legality",
+        "professional integrity",
+        "misconduct"
+      ]
+    },
+    {
+      "id": "eti-ch3-q138",
+      "text": "A digital forensic investigator accepting a case that demonstrably exceeds their technical skills and knowledge is acting unethically by:",
+      "options": [
+        {
+          "id": "eti-ch3-q138-opt1",
+          "text": "Potentially delaying the investigation process.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q138-opt2",
+          "text": "Risking the integrity and reliability of the evidence analysis",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q138-opt3",
+          "text": "Possibly increasing the overall cost of the investigation.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q138-opt4",
+          "text": "Undermining the authority of the requesting party.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Deliberately undertaking an assignment beyond capability is listed as an unethical norm because it risks improper handling or analysis of evidence due to lack of competence.",
+      "tags": [
+        "ethical issues",
+        "competence",
+        "professional boundaries",
+        "risk to investigation"
+      ]
+    },
+    {
+      "id": "eti-ch3-q139",
+      "text": "Falsifying one's credentials in digital forensics is primarily an ethical violation concerning:",
+      "options": [
+        {
+          "id": "eti-ch3-q139-opt1",
+          "text": "The efficiency of evidence acquisition techniques.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q139-opt2",
+          "text": "The transparency of reporting procedures.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q139-opt3",
+          "text": "Professional integrity and misrepresentation",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q139-opt4",
+          "text": "The adherence to legal search and seizure guidelines.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Distorting or falsifying education, training, credentials is listed as an unethical norm, directly impacting professional integrity and involving misrepresentation of qualifications.",
+      "tags": [
+        "ethical issues",
+        "misrepresentation",
+        "credentials",
+        "professional integrity"
+      ]
+    },
+    {
+      "id": "eti-ch3-q140",
+      "text": "A digital forensic investigator allowing personal prejudice to influence their interpretation of digital evidence is violating the ethical expectation of:",
+      "options": [
+        {
+          "id": "eti-ch3-q140-opt1",
+          "text": "Honoring confidentiality.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q140-opt2",
+          "text": "Respecting the privacy of others.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q140-opt3",
+          "text": "Impartiality and objectivity",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q140-opt4",
+          "text": "Properly crediting intellectual property.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Displaying bias or prejudice in findings or observation is listed as an unethical norm, which is the antithesis of impartiality and objectivity required in professional investigations.",
+      "tags": [
+        "ethical issues",
+        "bias",
+        "prejudice",
+        "impartiality"
+      ]
+    },
+    {
+      "id": "eti-ch3-q141",
+      "text": "Exceeding the legal boundaries of an authorized digital forensic examination is a serious ethical breach primarily because it can:",
+      "options": [
+        {
+          "id": "eti-ch3-q141-opt1",
+          "text": "Lead to the investigator being overwhelmed by excessive data.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q141-opt2",
+          "text": "Increase the time required to complete the forensic analysis.",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch3-q141-opt3",
+          "text": "Jeopardize the legal admissibility of any evidence found",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch3-q141-opt4",
+          "text": "Create unnecessary complexity in the final forensic report.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Exceeding or outpacing authorization in conducting examination is listed as an unethical norm. This can lead to evidence being deemed inadmissible due to improper or illegal collection or analysis.",
+      "tags": [
+        "ethical issues",
+        "authorization",
+        "legal boundaries",
+        "admissibility of evidence"
+      ]
+    }
+  ]
+}

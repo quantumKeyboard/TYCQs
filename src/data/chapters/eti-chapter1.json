@@ -1,0 +1,35 @@
+{
+  "chapterId": "eti-chapter1",
+  "title": "Professional Ethics and Conduct",
+  "description": "Introduction to professional ethics and conduct in the IT industry",
+  "questions": [
+    {
+      "id": "eti-ch1-q1",
+      "text": "What is the primary purpose of professional ethics in IT?",
+      "options": [
+        {
+          "id": "eti-ch1-q1-opt1",
+          "text": "To ensure technical excellence only",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q1-opt2",
+          "text": "To guide behavior and decision-making in professional practice",
+          "isCorrect": true
+        },
+        {
+          "id": "eti-ch1-q1-opt3",
+          "text": "To increase profit margins",
+          "isCorrect": false
+        },
+        {
+          "id": "eti-ch1-q1-opt4",
+          "text": "To comply with legal requirements only",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Professional ethics in IT serves as a framework to guide behavior and decision-making in professional practice. While technical excellence and legal compliance are important, ethics goes beyond these aspects to ensure moral responsibility, trust, and the protection of stakeholders' interests. It helps professionals make decisions that balance various concerns including technical, social, and moral implications.",
+      "tags": ["ethics", "professionalism", "conduct", "responsibility"]
+    }
+  ]
+} 

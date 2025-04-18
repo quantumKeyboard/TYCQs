@@ -1,0 +1,43 @@
+{
+  "chapterId": "mgt-chapter1",
+  "title": "Introduction to Management",
+  "description": "Basic concepts and principles of management in organizations",
+  "learningObjectives": [
+    "Understand the fundamental functions of management",
+    "Identify the key components of the planning process",
+    "Recognize the importance of decision-making in management",
+    "Apply basic management concepts to organizational scenarios"
+  ],
+  "questions": [
+    {
+      "id": "mgt-ch1-q1",
+      "text": "Which of the following best describes the planning function of management?",
+      "options": [
+        {
+          "id": "mgt-ch1-q1-opt1",
+          "text": "Setting goals and deciding how to achieve them",
+          "isCorrect": true
+        },
+        {
+          "id": "mgt-ch1-q1-opt2",
+          "text": "Directing day-to-day operations",
+          "isCorrect": false
+        },
+        {
+          "id": "mgt-ch1-q1-opt3",
+          "text": "Evaluating employee performance",
+          "isCorrect": false
+        },
+        {
+          "id": "mgt-ch1-q1-opt4",
+          "text": "Managing conflicts between team members",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Planning is the primary management function that involves setting organizational goals and determining the best approach to achieve those goals. It provides direction and purpose to all other management activities.",
+      "tags": ["management", "planning", "functions"],
+      "category": "planning",
+      "difficulty": "basic"
+    }
+  ]
+} 

@@ -11,9 +11,8 @@
   ],
   "routes": [
     {
-      "src": "/assets/(.*)",
+      "src": "/(.*\\.js)",
       "headers": {
-        "cache-control": "public, max-age=31536000, immutable",
         "content-type": "application/javascript"
       },
       "continue": true
